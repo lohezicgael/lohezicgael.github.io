@@ -1,0 +1,279 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*Couleurs de départ*/
+:root {
+  --background-color: #D93A3A;
+  --text-color: white;
+  --heading-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--heading-color);
+}
+
+.navigation {
+  color: white;
+}
+
+/*Fond de ma page*/
+body {
+  background-image: url("../photo/fond_intro.svg");
+  background-size: cover;
+}
+
+/*Ma barre de navigation*/
+nav {
+  display: flex;
+  background-color: #D93A3A;
+  padding: 5px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px #920707;
+}
+
+/*Mes positionnements d'onglets de barre de navigation*/
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Mes onglets de barre de navigation*/
+.navigation {
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Knewave', cursive;
+  font-size: 1.25rem;
+  color: #D93A3A;
+  border: solid;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.navigation:hover {
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 8.75em;
+  font-family: 'Knewave', cursive;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-family: 'Kodchasan', sans-serif;
+  font-weight: 10;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
+}
+
+h3 {
+  font-family: 'Kodchasan', sans-serif;
+  bottom: 0;
+  color: white;
+}
+
+footer {
+  display: flex;
+  bottom: 0;
+  color: white;
+  margin-left: 50px;
+}
+
+/*Mes nuages pour décorer mon site */
+.nuage {
+  height: 500px;
+  width: 500px;
+  z-index: 0;
+  position: absolute;
+  opacity: 60%;
+}
+
+/*Mouvement des nuages*/
+@keyframes horizontal-movement-droite {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(1600px);
+  }
+}
+
+#nuage1 {
+  animation: horizontal-movement-droite 23s linear infinite;
+  height: 200px;
+  width: 200px;
+}
+
+#nuage2 {
+  animation: horizontal-movement-droite 15s linear infinite;
+  height: 200px;
+  width: 200px;
+}
+
+@keyframes horizontal-movement-gauche {
+  from {
+    transform: translateX(1600px);
+  }
+
+  to {
+    transform: translateX(-240px);
+  }
+}
+
+#nuage3 {
+  animation: horizontal-movement-gauche 20s linear infinite;
+  height: 250px;
+  width: 250px;
+}
+
+/*Animation du texte qui change pour mettre différents adjectifs me qualifiant*/
+.text {
+  animation: text-change 10s linear infinite;
+}
+
+@keyframes text-change {
+  from {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+
+/*Bouton contact qui permet d'aller directement à la page contact*/
+.contact {
+  text-decoration: none;
+  font-family: 'Kodchasan', sans-serif;
+  color: rgb(0, 0, 0);
+  height: 100px;
+  width: 100px;
+}
+
+.container-contact {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-6deg);
+  margin-left: 1000px;
+  margin-top: 190px;
+}
+
+.container-contact:hover {
+  transform: translate(5px, 3px);
+  transition: 3s;
+}
+
+/*Logo situé dans la barre de nav qui permet de revenir à la page index en haut à gauche */
+.container-logo {
+  background-color: white;
+  width: 35px;
+  height: 50px;
+}
+
+.logo {
+  width: 50px;
+  margin-top: 3px;
+}
+
+.container-logo:hover {
+  scale: 110%;
+  transition-duration: 2S;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 2em;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .container-contact {
+    display: none;
+  }
+
+  .nuage {
+    height: 500px;
+    width: 500px;
+    z-index: 0;
+    opacity: 60%;
+    z-index: 0;
+  }
+
+  footer {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /*Mouvement des nuages*/
+  @keyframes horizontal-movement-droite {
+    from {
+      transform: translateX(-100px);
+    }
+
+    to {
+      transform: translateX(300px);
+    }
+  }
+
+  #nuage1 {
+    animation: horizontal-movement-droite 7s linear infinite;
+    height: 200px;
+    width: 200px;
+  }
+
+  #nuage2 {
+    animation: horizontal-movement-droite 6s linear infinite;
+    height: 200px;
+    width: 200px;
+  }
+
+  /*Mouvement des nuages*/
+  @keyframes horizontal-movement-gauche {
+    from {
+      transform: translateX(300px);
+    }
+
+    to {
+      transform: translateX(-100px);
+    }
+  }
+
+  #nuage3 {
+    animation: horizontal-movement-gauche 6s linear infinite;
+    height: 250px;
+    width: 250px;
+  }
+
+  footer {
+    margin-top: 400px;
+  }
+}

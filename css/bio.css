@@ -1,0 +1,255 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #D93A3A;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+.navigation {
+  color: white;
+}
+
+body {
+  background-image: url("../photo/sol_bio.svg");
+  background-size: cover;
+}
+
+/*Ma barre de navigation*/
+nav {
+  display: flex;
+  background-color: #D93A3A;
+  padding: 5px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px #920707;
+}
+
+/*Mes positionnements d'onglets de barre de navigation*/
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Mes onglets de barre de navigation*/
+.navigation {
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Knewave', cursive;
+  font-size: 1.25rem;
+  color: #D93A3A;
+  border: solid;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.navigation:hover {
+  color: rgb(0, 0, 0);
+}
+
+/*Taille logo des logiciels que je maitrise à la fin de la page*/
+.aff {
+  height: 50px;
+  width: 200px;
+  justify-content: end;
+  max-width: 100%;
+
+}
+
+h1 {
+  font-size: 6.25vw;
+  margin-left: 50px;
+  font-family: 'Knewave', cursive;
+  color: white;
+
+}
+
+/*Texte présent sur la biographie */
+.bio {
+  margin-left: 50px;
+  width: 700px;
+  font-size: 1.50vw;
+  font-family: 'Kodchasan', sans-serif;
+  color: white;
+
+
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+/*Texte présent sur les noms des logiciels*/
+.text-aff {
+  margin-left: 50px;
+  width: 600px;
+  font-size: 1.25vw;
+  font-family: 'Kodchasan', sans-serif;
+  color: white;
+}
+
+.container_cv {
+  background-color: white;
+  width: 170px;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.oeil {
+  width: 60px;
+}
+
+.cv {
+  text-decoration: none;
+  color: black;
+  font-family: 'Knewave', cursive;
+  padding-top: 13px;
+}
+
+/*Ensemble des containers des logiciels que je maitrise à la fin de la plage*/
+.container {
+  display: flex;
+  margin: 100px;
+  justify-content: center;
+
+}
+
+/*Container des logiciels que je maitrise à la fin de la plage*/
+.box {
+  width: 30%;
+  height: 1000px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  margin: 30px;
+  color: var(--background-color);
+}
+
+.categories {
+  color: #D93A3A;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.875vw;
+  font-family: 'Knewave', cursive;
+}
+
+/*Fond de la page*/
+.background-image {
+  background-image: url(sol_bio.svg);
+  height: 100px;
+  width: 400px;
+}
+
+/*Couleur texte logiciels*/
+.text-aff {
+  color: #D93A3A;
+}
+
+footer {
+  display: flex;
+  bottom: 0;
+  color: white;
+  margin-left: 50px;
+}
+
+h3 {
+  font-family: 'Kodchasan', sans-serif;
+  bottom: 0;
+  color: var(--background-color);
+}
+
+/*Logo situé dans la barre de nav qui permet de revenir à la page index en haut à gauche */
+.container-logo {
+  background-color: white;
+  width: 35px;
+  height: 50px;
+}
+
+.logo {
+  width: 50px;
+  margin-top: 3px;
+}
+
+.container-logo:hover {
+  scale: 110%;
+  transition-duration: 2S;
+}
+
+/*Photo de mon parcours*/
+.parcours {
+  width: 1000px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/*Image qui contient ma photo*/
+.photo {
+  width: 700px;
+  height: 700px;
+  max-width: 100%;
+}
+
+.photo-text {
+  display: flex;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .photo-text {
+    flex-wrap: wrap;
+  }
+
+  .bio {
+    font-size: 1.3em;
+    text-align: start;
+  }
+
+  footer {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 0.7em;
+  }
+
+  .box {
+    width: 120px;
+    height: 600px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .text-aff {
+    font-size: 0.5em;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

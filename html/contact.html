@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link rel="shortcut icon" href="../photo/mon-logo-blanc.svg" />
+
+
+<head>
+  <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="container-logo"><a href="../html/index.html"> <img class="logo" src="../photo/mon-logo.svg"
+            alt="logo"> </a>
+      </div>
+      <div class="nav-container">
+        <a class="navigation" href="../html/bio.html">Bio</a>
+        <a class="navigation" href="../html/projet.html">Projets</a>
+        <a class="navigation" href="../html/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <img class="nuage" id="nuage1" src="../photo/nuage1.svg" alt="nuage">
+  <h1>Contact</h1>
+  <img class="nuage" id="nuage3" src="../photo/nuage1.svg" alt="nuage">
+
+  <script>
+    const textContainer = document.getElementById("textContainer");
+    const texts = ["Graphiste determiné", "Graphiste curieux", "Graphiste autodidacte", "Graphiste patient"];
+    let index = 0;
+    setInterval(function () {
+      textContainer.innerHTML = `<h2 class="text">${texts[index]}</p>`;
+      index = (index + 1) % texts.length;
+    }, 10000);
+  </script>
+
+  <img class="nuage" id="nuage2" src="../photo/nuage1.svg" alt="nuage">
+  <div class="container-index">
+    <a class="index" href="../html/index.html">Gaël Lohézic</a>
+  </div>
+
+  <div class="container-text-formulaire">
+    <div class="text">
+      <p>Retrouvez tous les réseaux sociaux où vous allez pouvoir me contacter ! <br> <br>
+
+        Vous avez des questions à me poser ou des projets à me proposer, répondez au formulaire. </p>
+    </div>
+
+
+    <form class="formulaire" action="" method="POST" autocomplete="off">
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required autocomplete="off">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required autocomplete="off">
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="mail" required autocomplete="off">
+      <label for="objet">Objet :</label>
+      <input type="text" id="objet" name="objet" required autocomplete="off">
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="6" required autocomplete="off"></textarea>
+      <input type="hidden" name="token" value="token">
+      <input type="hidden" name="redirect_pass" value="redirect_pass">
+      <input type="hidden" name="redirect_error" value="redirect_error">
+      <button id="envoyer" type="submit">Envoyer</button>
+    </form>
+  </div>
+
+  <div class="container-reseaux">
+    <a href="https://www.instagram.com/draw.lhc/" target="_blank"> <img class="reseaux" src="../photo/insta.svg"
+        alt="insta"> </a>
+    <a href="mailto:lohezicgael@gmail.com" target="_blank"> <img class="reseaux" src="../photo/gmail.svg" alt="mail">
+    </a>
+    <a href="https://www.linkedin.com/in/ga%C3%ABl-loh%C3%A9zic-580072254/" target="_blank"> <img class="linkedin"
+        src="../photo/linkedin.svg" alt="reseaux"> </a>
+    <a href="tel:+0679688643" target="_blank"> <img class="reseaux" src="../photo/tel.svg" alt="tel">
+    </a>
+    <a href="https://www.behance.net/gaellohezic" target="_blank"> <img class="reseaux" id="behance"
+        src="../photo/behance.svg" alt="behance"></a>
+  </div>
+
+  <footer>
+    <h3>© 2023 Gaël Lohézic, Inc. Tous droits réservés</h3>
+  </footer>
+
+</body>
+
+</html>
