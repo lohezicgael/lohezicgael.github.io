@@ -40,7 +40,6 @@ nav {
   padding: 5px;
   width: 100%;
   background-color: white;
-  box-shadow: 0px 10px 20px 0px #920707;
 }
 
 /*Mes positionnements d'onglets de barre de navigation*/
@@ -71,7 +70,7 @@ h1 {
   font-family: 'Knewave', cursive;
   text-align: center;
   margin: 0;
-  z-index: 1;
+
   margin-top: 40px;
 }
 
@@ -81,7 +80,7 @@ h2 {
   font-weight: 10;
   text-align: center;
   margin: 0;
-  z-index: 1;
+  
 }
 
 h3 {
@@ -192,7 +191,7 @@ footer {
 }
 
 .logo {
-  width: 50px;
+  width: 37px;
   margin-top: 3px;
 }
 
