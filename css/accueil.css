@@ -6,11 +6,11 @@ body {
   margin: 0;
   background: url('../photo/fond_intro.svg') center/cover no-repeat; 
   background-position: bottom;
-  background-size: cover; /* Redimensionne l'image pour couvrir la totalité de l'élément */
+  background-size: 100%; /* Redimensionne l'image pour couvrir la totalité de l'élément */
   display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
-    z-index: 1;
+  overflow: hidden;
 }
 
 .conteneur {
@@ -59,10 +59,24 @@ nav {
     color: rgb(0, 0, 0);
   }
 
+  
+
+  .ligne-separation {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 1%;
+  border-radius: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  }
+
   footer {
     bottom: 0;
     background-color: #423f3e;
     font-family: 'Kodchasan', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4em;
   }
 
   /*Logo dans barre de navigation*/
@@ -124,13 +138,21 @@ nav {
   .nuage {
     
     opacity: 30%;
-    z-index: 0;
+    z-index: -1;
     position: absolute;
   }
 
   #nuage1 {
-    animation: horizontal-movement-droite 3s linear infinite;
+    animation: horizontal-movement-droite 10s linear infinite;
     height: 200px;
+    width: auto;
+    z-index: -1;
+  }
+
+  #nuage2 {
+    animation: horizontal-movement-droite 20s linear infinite;
+    height: 100px;
+    width: auto;
     z-index: -1;
   }
 
@@ -140,6 +162,82 @@ nav {
     }
   
     to {
-      transform: translateX(100%);
+      transform: translateX(100vw);
     }
   }
+
+  #nuage3 {
+    animation: horizontal-movement-gauche 15s linear infinite;
+    height: 120px;
+    width: auto;
+    z-index: -1;
+  }
+
+  @keyframes horizontal-movement-gauche {
+    from {
+      transform: translateX(100vw);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  
+/* Media Query pour les tablettes (ajustez les valeurs en conséquence) */
+@media only screen and (max-width: 916px) {
+  h1 {
+    font-size: 6em;
+    font-family: 'Knewave', cursive;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+
+  }
+
+  h2 {
+    font-size: 2.75rem;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 10;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* Media Query pour les téléphones (ajustez les valeurs en conséquence) */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+    font-family: 'Knewave', cursive;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 10;
+    text-align: center;
+    margin: 0;
+  }.ligne-separation {
+      width: 40%; /* Ajustez la largeur pour les téléphones */
+  }
+
+  body {
+    width: 100%; /* La largeur occupe 100% de la largeur disponible */
+    height: 100vh;  /* La hauteur occupe 100% de la hauteur de la fenêtre visible */
+    padding: 0;
+    margin: 0;
+    background: url('../photo/fond_intro_mobile.svg') center/cover no-repeat; 
+    background-position: bottom;
+    background-size: cover; /* Redimensionne l'image pour couvrir la totalité de l'élément */
+    display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
+    overflow: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+}
