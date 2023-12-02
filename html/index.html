@@ -32,29 +32,36 @@
     </nav>
   </header>
 
+  <div class="conteneur">
+
   <img class="nuage" id="nuage1" src="../photo/nuage1.svg" alt="nuage">
   <h1>GAËL LOHÉZIC</h1>
-  <img class="nuage" id="nuage3" src="../photo/nuage1.svg" alt="nuage">
+
+
+
+  <img class="nuage" id="nuage2" src="../photo/nuage1.svg" alt="nuage">
   <div id="textContainer">
     <h2 class="text">Graphiste créatif</h2>
   </div>
+  <img class="nuage" id="nuage3" src="../photo/nuage1.svg" alt="nuage">
 
   <script>
     const textContainer = document.getElementById("textContainer");
-    const texts = ["Graphiste determiné", "Graphiste curieux", "Graphiste autodidacte", "Graphiste patient"];
+    const texts = ["Graphiste déterminé", "Graphiste curieux", "Graphiste autodidacte", "Graphiste patient"];
     let index = 0;
     setInterval(function () {
       textContainer.innerHTML = `<h2 class="text">${texts[index]}</p>`;
       index = (index + 1) % texts.length;
     }, 10000);
   </script>
-
-  <img class="nuage" id="nuage2" src="../photo/nuage1.svg" alt="nuage">
-  <div class="container-contact">
-    <a class="contact" href="../html/contact.html">Contact</a>
   </div>
 
+ 
+
   <footer>
+    <div class="ligne-separation"></div>
+    <h3>N’hésitez pas à me contacter !</h3>
+    <h3>06 79 68 86 43  | lohezicgael@gmail.com</h3>
     <h3>© 2023 Gaël Lohézic, Inc. Tous droits réservés</h3>
   </footer>
 
