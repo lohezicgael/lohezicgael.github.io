@@ -1,0 +1,145 @@
+html,
+body {
+  width: 100%; /* La largeur occupe 100% de la largeur disponible */
+  height: 100vh;  /* La hauteur occupe 100% de la hauteur de la fenêtre visible */
+  padding: 0;
+  margin: 0;
+  background: url('../photo/fond_intro.svg') center/cover no-repeat; 
+  background-position: bottom;
+  background-size: cover; /* Redimensionne l'image pour couvrir la totalité de l'élément */
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
+   
+}
+
+.conteneur {
+    flex: 1;
+    z-index: 1;
+}
+
+:root {
+    --background-color: #D93A3A;
+    --text-color: white;
+    --heading-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+nav {
+    display: flex;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /*Mes positionnements d'onglets de barre de navigation*/
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*Mes onglets de barre de navigation*/
+  .navigation {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Knewave', cursive;
+    font-size: 1.25rem;
+    color: #D93A3A;
+    border: solid;
+    border-radius: 15px;
+    margin-left: 10px;
+  }
+
+  .navigation:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  footer {
+    bottom: 0;
+    background-color: #423f3e;
+    font-family: 'Kodchasan', sans-serif;
+  }
+
+  /*Logo dans barre de navigation*/
+
+  .container-logo {
+    background-color: white;
+    width: 35px;
+    height: 50px;
+  }
+  
+  .logo {
+    width: 37px;
+    margin-top: 3px;
+  }
+  
+  .container-logo:hover {
+    scale: 110%;
+    transition-duration: 2S;
+  }
+
+  /*Mes titres*/
+  
+ h1 {
+    font-size: 8.75em;
+    font-family: 'Knewave', cursive;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+
+  }
+
+  h2 {
+    font-size: 3.75rem;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 10;
+    text-align: center;
+    margin: 0;
+    
+    
+  }
+
+  /*Animation du texte qui change pour mettre différents adjectifs me qualifiant*/
+.text {
+    animation: text-change 10s linear infinite;
+  }
+  
+  @keyframes text-change {
+    from {
+      transform: translateY(0px);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateY(20px);
+      opacity: 1;
+    }
+  }
+
+  .nuage {
+    width: 5em;
+    opacity: 30%;
+    z-index: 2;
+  }
+
+  #nuage1 {
+    animation: horizontal-movement-droite 23s linear infinite;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+  }
+
+  @keyframes horizontal-movement-droite {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(1600px);
+    }
+  }
