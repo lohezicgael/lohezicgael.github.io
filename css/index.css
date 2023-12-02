@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .conteneur {
@@ -77,6 +78,7 @@ nav {
     font-size: 10px;
     text-align: center;
     margin-top: 4em;
+    margin-bottom: 0;
   }
 
   /*Logo dans barre de navigation*/
