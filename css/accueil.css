@@ -10,7 +10,7 @@ body {
   display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
-   
+    z-index: 1;
 }
 
 .conteneur {
@@ -122,16 +122,16 @@ nav {
   }
 
   .nuage {
-    width: 5em;
+    
     opacity: 30%;
-    z-index: 2;
+    z-index: 0;
+    position: absolute;
   }
 
   #nuage1 {
-    animation: horizontal-movement-droite 23s linear infinite;
+    animation: horizontal-movement-droite 3s linear infinite;
     height: 200px;
-    width: 200px;
-    z-index: 2;
+    z-index: -1;
   }
 
   @keyframes horizontal-movement-droite {
@@ -140,6 +140,6 @@ nav {
     }
   
     to {
-      transform: translateX(1600px);
+      transform: translateX(100%);
     }
   }
