@@ -11,7 +11,6 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
   overflow: hidden;
-  min-height: 100vh;
 }
 
 .conteneur {
@@ -205,7 +204,7 @@ nav {
     margin: 0;
   }
 
-  
+  html,
   body {
     width: 100%; /* La largeur occupe 100% de la largeur disponible */
     height: 100vh;  /* La hauteur occupe 100% de la hauteur de la fenêtre visible */
@@ -244,6 +243,7 @@ nav {
       width: 40%; /* Ajustez la largeur pour les téléphones */
   }
 
+  html,
   body {
     width: 100%; /* La largeur occupe 100% de la largeur disponible */
     height: 100vh;  /* La hauteur occupe 100% de la hauteur de la fenêtre visible */
@@ -281,3 +281,4 @@ nav {
     z-index: -1;
   }
 }
+
