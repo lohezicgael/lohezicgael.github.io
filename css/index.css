@@ -14,8 +14,13 @@ body {
 }
 
 .conteneur {
-    flex: 1;
-    z-index: 1;
+  display: flex;
+  flex-direction: column; /* ou row, en fonction de votre disposition souhaitée */
+  align-items: center;
+}
+
+.conteneur > * {
+  flex: 1; /* ou d'autres propriétés flex si nécessaire */
 }
 
 :root {
@@ -147,14 +152,14 @@ nav {
     animation: horizontal-movement-droite 10s linear infinite;
     height: 200px;
     width: auto;
-    z-index: -1;
+    
   }
 
   #nuage2 {
     animation: horizontal-movement-droite 20s linear infinite;
     height: 100px;
     width: auto;
-    z-index: -1;
+   
   }
 
   @keyframes horizontal-movement-droite {
@@ -171,7 +176,7 @@ nav {
     animation: horizontal-movement-gauche 15s linear infinite;
     height: 120px;
     width: auto;
-    z-index: -1;
+   
   }
 
   @keyframes horizontal-movement-gauche {
