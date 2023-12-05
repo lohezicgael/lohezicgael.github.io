@@ -213,8 +213,20 @@ nav {
       width: 40%; /* Ajustez la largeur pour les téléphones */
   }
 
-  
+  @keyframes deplacement-droite {
+    from {
+      transform: translateX(-60vw);
+    }
+    to {
+      transform: translateX(60vw);
+    }
+  }
+
+  .nuage-animation {
+    animation: deplacement-droite 5s linear infinite;
+  }
 
   
 }
 
+}
