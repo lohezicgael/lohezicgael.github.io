@@ -1,26 +1,51 @@
+
+
 html,
 body {
-  width: 100%; /* La largeur occupe 100% de la largeur disponible */
-  height: 100vh;  /* La hauteur occupe 100% de la hauteur de la fenêtre visible */
-  padding: 0;
   margin: 0;
-  background: url('../photo/fond_intro.svg') center/cover no-repeat; 
+  padding: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+.nuage { 
+  width: 14em;
+  opacity: 60%;
+ 
+}
+
+@keyframes deplacement-droite {
+  from {
+    transform: translateX(-60vw);
+  }
+  to {
+    transform: translateX(70vw);
+  }
+}
+
+.nuage-animation {
+  animation: deplacement-droite 14s linear infinite;
+}
+
+.background-container {
+
+  
+  background: url('../photo/fond_intro.svg') ;
+  background-size: cover; /* ou background-size: 100% 100%; pour remplir entièrement */
   background-position: bottom;
-  background-size: 100%; /* Redimensionne l'image pour couvrir la totalité de l'élément */
-  display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
-  overflow: hidden;
+  height: 90%; /* Pour s'assurer que la div occupe toute la hauteur du body */
+
+  
+ 
 }
 
 .conteneur {
   display: flex;
-  flex-direction: column; /* ou row, en fonction de votre disposition souhaitée */
+  flex-direction: column;
   align-items: center;
-}
-
-.conteneur > * {
-  flex: 1; /* ou d'autres propriétés flex si nécessaire */
+  height: 100%;
+  bottom: 0;
+  flex: 1;
 }
 
 :root {
@@ -81,8 +106,8 @@ nav {
     font-family: 'Kodchasan', sans-serif;
     font-size: 10px;
     text-align: center;
-    margin-top: 4em;
-    margin-bottom: 0;
+    width: 100%;
+    position: fixed;
   }
 
   /*Logo dans barre de navigation*/
@@ -141,53 +166,8 @@ nav {
     }
   }
 
-  .nuage {
-    
-    opacity: 30%;
-    z-index: -1;
-    position: absolute;
-  }
 
-  #nuage1 {
-    animation: horizontal-movement-droite 10s linear infinite;
-    height: 200px;
-    width: auto;
-    
-  }
 
-  #nuage2 {
-    animation: horizontal-movement-droite 20s linear infinite;
-    height: 100px;
-    width: auto;
-   
-  }
-
-  @keyframes horizontal-movement-droite {
-    from {
-      transform: translateX(0);
-    }
-  
-    to {
-      transform: translateX(100vw);
-    }
-  }
-
-  #nuage3 {
-    animation: horizontal-movement-gauche 15s linear infinite;
-    height: 120px;
-    width: auto;
-   
-  }
-
-  @keyframes horizontal-movement-gauche {
-    from {
-      transform: translateX(100vw);
-    }
-
-    to {
-      transform: translateX(0);
-    }
-  }
 
   
 /* Media Query pour les tablettes (ajustez les valeurs en conséquence) */
@@ -209,23 +189,7 @@ nav {
     margin: 0;
   }
 
-  html,
-  body {
-    width: 100%; /* La largeur occupe 100% de la largeur disponible */
-    height: 100vh;  /* La hauteur occupe 100% de la hauteur de la fenêtre visible */
-    padding: 0;
-    margin: 0;
-    background: url('../photo/fond_intro_tablette.svg') center/cover no-repeat; 
-    background-position: bottom;
-    background-size: cover; /* Redimensionne l'image pour couvrir la totalité de l'élément */
-    display: flex;
-      flex-direction: column;
-      min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
-    overflow: hidden;
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-}
+  
 
 /* Media Query pour les téléphones (ajustez les valeurs en conséquence) */
 @media only screen and (max-width: 480px) {
@@ -244,46 +208,13 @@ nav {
     font-weight: 10;
     text-align: center;
     margin: 0;
+
   }.ligne-separation {
       width: 40%; /* Ajustez la largeur pour les téléphones */
   }
 
-  html,
-  body {
-    width: 100%; /* La largeur occupe 100% de la largeur disponible */
-    height: 100vh;  /* La hauteur occupe 100% de la hauteur de la fenêtre visible */
-    padding: 0;
-    margin: 0;
-    background: url('../photo/fond_intro_mobile.svg') center/cover no-repeat; 
-    background-position: bottom;
-    background-size: cover; /* Redimensionne l'image pour couvrir la totalité de l'élément */
-    display: flex;
-      flex-direction: column;
-      min-height: 100vh; /* Assure que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
-    overflow: hidden;
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
+  
 
-  #nuage1 {
-    animation: horizontal-movement-droite 7s linear infinite;
-    height: 200px;
-    width: auto;
-    z-index: -1;
-  }
-
-  #nuage2 {
-    animation: horizontal-movement-droite 10s linear infinite;
-    height: 100px;
-    width: auto;
-    z-index: -1;
-  }
-
-  #nuage3 {
-    animation: horizontal-movement-gauche 6s linear infinite;
-    height: 120px;
-    width: auto;
-    z-index: -1;
-  }
+  
 }
 
