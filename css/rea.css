@@ -1,0 +1,216 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+ 
+}
+
+.conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  bottom: 0;
+  flex: 1;
+}
+
+:root {
+    --background-color: #D93A3A;
+    --text-color: white;
+    --heading-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+nav {
+    display: flex;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /*Mes positionnements d'onglets de barre de navigation*/
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*Mes onglets de barre de navigation*/
+  .navigation {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Knewave', cursive;
+    font-size: 1.25rem;
+    color: #D93A3A;
+    border: solid;
+    border-radius: 15px;
+    margin-left: 10px;
+  }
+
+  .navigation:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  
+
+  .ligne-separation {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 1%;
+  border-radius: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  }
+
+  footer {
+    bottom: 0;
+    background-color: #423f3e;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+   
+  }
+
+  /*Logo dans barre de navigation*/
+
+  .container-logo {
+    background-color: white;
+    width: 35px;
+    height: 50px;
+  }
+  
+  .logo {
+    width: 37px;
+    margin-top: 3px;
+  }
+  
+  .container-logo:hover {
+    scale: 110%;
+    transition-duration: 2S;
+  }
+
+  .titre {
+    font-size: 6.25vw;
+    margin-left: 50px;
+    font-family: 'Knewave', cursive;
+    color: white;
+  }
+
+.conteneur_projet{
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    margin-right: 50px;
+    margin-left: 50px;  
+}
+
+/*--------------PROJET 1---------------*/
+
+.projet1{
+    background-image: url('../photo/projet2.svg');
+    transition: filter 0.3s ease;
+    /* Définissez le style de l'image de fond */
+    background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+    background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+    background-position: center center; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+
+
+.info1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    opacity: 0; /* Le texte est initialement invisible */
+    transition: opacity 0.3s ease;
+
+}
+
+.info1:hover{
+    opacity: 1;
+    background-color: rgba(66, 63, 62, 0.5); 
+  
+}
+
+.titre_projet{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Knewave', cursive;
+}
+/*--------------PROJET 2---------------*/
+
+.projet2{
+    background-image: url('../photo/affiche-203.svg');
+    transition: filter 0.3s ease;
+
+    /* Définissez le style de l'image de fond */
+    background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+    background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+    background-position: center center; 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.info2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    opacity: 0; /* Le texte est initialement invisible */
+    transition: opacity 0.3s ease;
+}
+
+.info2:hover{
+    opacity: 1;
+    background-color: rgba(66, 63, 62, 0.5); 
+
+}
+
+/*--------------PROJET 3---------------*/
+
+.projet3{
+    background-image: url('../photo/projet6.png');
+    transition: filter 0.3s ease;
+
+    /* Définissez le style de l'image de fond */
+    background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+    background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+    background-position: center center; 
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+
+.info3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    opacity: 0; /* Le texte est initialement invisible */
+    transition: opacity 0.3s ease;
+}
+
+.info3:hover{
+    opacity: 1;
+    background-color: rgba(66, 63, 62, 0.5); 
+}

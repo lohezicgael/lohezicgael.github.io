@@ -3,37 +3,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden
-}
-
-.nuage { 
-  width: 14em;
-  opacity: 60%;
- 
-}
-
-@keyframes deplacement-droite {
-  from {
-    transform: translateX(-60vw);
-  }
-  to {
-    transform: translateX(70vw);
-  }
-}
-
-.nuage-animation {
-  animation: deplacement-droite 14s linear infinite;
-}
-
-.background-container {
-
-  
-  background: url() ;
-  background-size: cover; /* ou background-size: 100% 100%; pour remplir entièrement */
-  background-position: bottom;
-  height: 90%; /* Pour s'assurer que la div occupe toute la hauteur du body */
-
-  
  
 }
 
@@ -105,7 +74,7 @@ nav {
     font-size: 10px;
     text-align: center;
     width: 100%;
-    position: fixed;
+   
   }
 
   /*Logo dans barre de navigation*/
@@ -124,4 +93,19 @@ nav {
   .container-logo:hover {
     scale: 110%;
     transition-duration: 2S;
+  }
+
+  h1 {
+    font-size: 6.25vw;
+    margin-left: 50px;
+    font-family: 'Knewave', cursive;
+    color: white;
+  }
+
+  .bio {
+    margin-left: 50px;
+    width: 700px;
+    font-size: 1.50vw;
+    font-family: 'Kodchasan', sans-serif;
+    color: white;
   }
