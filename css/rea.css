@@ -16,7 +16,7 @@ body {
 }
 
 :root {
-    --background-color: #D93A3A;
+    --background-color: #F28F34;
     --text-color: white;
     --heading-color: white;
   }
@@ -186,7 +186,7 @@ nav {
 /*--------------PROJET 3---------------*/
 
 .projet3{
-    background-image: url('../photo/projet6.png');
+    background-image: url('../photo/Plan\ de\ travail\ 1-100.jpg');
     transition: filter 0.3s ease;
 
     /* Définissez le style de l'image de fond */
@@ -213,4 +213,69 @@ nav {
 .info3:hover{
     opacity: 1;
     background-color: rgba(66, 63, 62, 0.5); 
+}
+
+/*--------------PROJET 4---------------*/
+.projet4{
+  background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
+  transition: filter 0.3s ease;
+
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+
+.info4{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+}
+
+.info4:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+}
+
+/*--------------PROJET 5---------------*/
+.projet5{
+  background-image: url('../photo/projet4.svg');
+  transition: filter 0.3s ease;
+
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+
+.info5{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+
+    
+
+}
+
+.info5:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
 }
