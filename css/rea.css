@@ -16,7 +16,7 @@ body {
 }
 
 :root {
-    --background-color: #F28F34;
+    --background-color: #D93A3A;
     --text-color: white;
     --heading-color: white;
   }
@@ -31,6 +31,7 @@ nav {
     padding: 5px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    
   }
   
   /*Mes positionnements d'onglets de barre de navigation*/
@@ -74,7 +75,7 @@ nav {
     font-size: 10px;
     text-align: center;
     width: 100%;
-   
+    position: fixed;
   }
 
   /*Logo dans barre de navigation*/
@@ -102,14 +103,31 @@ nav {
     color: white;
   }
 
+  .conteneur_titre{
+    background-color: rgb(133, 103, 103);
+    height: 100%;
+    position: fixed;
+  }
+  .conteneur_titre_projet{
+    display: flex;
+    flex-direction: row ;
+  }
+
 .conteneur_projet{
-    min-height: 500px;
+    min-height: 800px;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr 1fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
     margin-right: 50px;
     margin-left: 50px;  
 }
+
+.titre_bord{
+    writing-mode: vertical-rl; /* vertical right-to-left */
+    text-orientation: mixed; /* optionnel, permet de spécifier l'orientation du texte */
+    white-space: nowrap; /* empêche le texte de passer à la ligne */
+
+  }
 
 /*--------------PROJET 1---------------*/
 
@@ -124,7 +142,7 @@ nav {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    
+    display: flex; /* Utilisez display:flex; pour permettre l'alignement vertical */
 }
 
 
@@ -136,8 +154,9 @@ nav {
     grid-row-end: 2;
     text-align: center;
     opacity: 0; /* Le texte est initialement invisible */
-    transition: opacity 0.3s ease;
-
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    height: 100%;
 }
 
 .info1:hover{
@@ -150,7 +169,25 @@ nav {
     font-size: 2em;
     text-align: center;
     font-family: 'Knewave', cursive;
+    margin-top: 150px;
+    transition: 0.6s transform;
 }
+
+.info1:hover .titre_projet {
+  transition: 0.6s;
+  transform: translate(0, -180%);
+}
+
+.info1 p {
+  transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
+}
+
+.info1:hover p {
+  transition: 0.6s;
+  transform: translate(0, -450%);
+}
+
+
 /*--------------PROJET 2---------------*/
 
 .projet2{
@@ -175,6 +212,7 @@ nav {
     text-align: center;
     opacity: 0; /* Le texte est initialement invisible */
     transition: opacity 0.3s ease;
+    cursor: pointer;
 }
 
 .info2:hover{
@@ -208,6 +246,7 @@ nav {
     text-align: center;
     opacity: 0; /* Le texte est initialement invisible */
     transition: opacity 0.3s ease;
+    cursor: pointer;
 }
 
 .info3:hover{
@@ -239,6 +278,7 @@ nav {
   text-align: center;
   opacity: 0; /* Le texte est initialement invisible */
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .info4:hover{
@@ -270,7 +310,7 @@ nav {
   text-align: center;
   opacity: 0; /* Le texte est initialement invisible */
   transition: opacity 0.3s ease;
-
+  cursor: pointer;
     
 
 }
@@ -279,3 +319,38 @@ nav {
   opacity: 1;
   background-color: rgba(66, 63, 62, 0.5); 
 }
+
+/*--------------PROJET 6---------------*/
+.projet6{
+  background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
+  transition: filter 0.3s ease;
+
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  
+}
+
+.info6{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+
+}
+
+.info6:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+}
+
