@@ -103,16 +103,6 @@ nav {
     color: white;
   }
 
-  .conteneur_titre{
-    height: 100%;
-    position: fixed;
-  }
-  
-  .conteneur_titre_projet{
-    display: flex;
-    justify-content: space-between;
-  }
-
 .conteneur_projet{
     min-height: 800px;
     display: grid;
@@ -122,18 +112,23 @@ nav {
     margin-left: 50px;  
 }
 
-.titre_bord{
-    text-orientation: mixed; /* optionnel, permet de spécifier l'orientation du texte */
-    white-space: nowrap; /* empêche le texte de passer à la ligne */
-  }
 
-#titre_bord_droite{
-  writing-mode: vertical-rl; /* vertical right-to-left */
-}
+/*effet parallax fin*/
 
-#titre_bord_gauche{
-  writing-mode: vertical-lr; /* Oriente le texte vers l'extérieur */
-  transform: rotate(180deg);
+.parallax {
+  /* The image used */
+  background-image: url("../photo/Victor\ 6000\ Lohézic\ Gaël.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  margin-top: 15vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*--------------PROJET 1---------------*/

@@ -1,0 +1,145 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/contemplation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"
+    ></script>
+    <title>Gallery</title>
+
+  </head>
+
+  <body>
+    <header>
+        <nav id="element1">
+          <div class="container-logo"><a href="../html/index.html"> <img class="logo" src="../../photo/mon-logo.svg"
+                alt="logo"> </a>
+          </div>
+          <div class="nav-container">
+            <a class="navigation" id="element2" href="../html/bio.html">Bio</a>
+            <a class="navigation" id="element3" href="../html/projet.html">Projets</a>
+            <a class="navigation" id="element4" href="../html/contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+    
+    
+      <h1 class="titre">Mes projets</h1>
+    
+      <div class="texte">AKAAKAKKAKAKAKAKA</div>
+
+
+
+    <section id="main-slider" class="splide" aria-label="My Awesome Gallery">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img
+              src="https://source.unsplash.com/random/1000x1000?sig=1"
+              alt=""
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://source.unsplash.com/random/1000x1000?sig=2"
+              alt=""
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://source.unsplash.com/random/1000x1000?sig=3"
+              alt=""
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://source.unsplash.com/random/1000x1000?sig=4"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <ul id="thumbnails" class="thumbnails">
+      <li class="thumbnail">
+        <img src="https://source.unsplash.com/random/1000x1000?sig=1" alt="" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://source.unsplash.com/random/1000x1000?sig=2" alt="" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://source.unsplash.com/random/1000x1000?sig=3" alt="" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://source.unsplash.com/random/1000x1000?sig=4" alt="" />
+      </li>
+    </ul>
+
+    <script>
+      var splide = new Splide("#main-slider", {
+        width: 600,
+        height: 300,
+        pagination: false,
+        cover: true
+      });
+
+      var thumbnails = document.getElementsByClassName("thumbnail");
+      var current;
+
+      for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i);
+      }
+
+      function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener("click", function () {
+          splide.go(index);
+        });
+      }
+
+      splide.on("mounted move", function () {
+        var thumbnail = thumbnails[splide.index];
+
+        if (thumbnail) {
+          if (current) {
+            current.classList.remove("is-active");
+          }
+
+          thumbnail.classList.add("is-active");
+          current = thumbnail;
+        }
+      });
+
+      splide.mount();
+    </script>
+ 
+
+
+<div class="blanc"></div>
+
+  <footer>
+    <div class="ligne-separation"></div>
+    <h3>N’hésitez pas à me contacter !</h3>
+    <h3>06 79 68 86 43 | lohezicgael@gmail.com</h3>
+    <h3>© 2023 Gaël Lohézic, Inc. Tous droits réservés</h3>
+  </footer>
+
+  <script src="../../javascript/carousel.js"></script>
+</body>
+
+</html>

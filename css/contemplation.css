@@ -1,0 +1,144 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  bottom: 0;
+  flex: 1;
+}
+
+:root {
+  --background-color: #D93A3A;
+  --text-color: white;
+  --heading-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*Mes positionnements d'onglets de barre de navigation*/
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Mes onglets de barre de navigation*/
+.navigation {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Knewave", cursive;
+  font-size: 1.25rem;
+  color: #D93A3A;
+  border: solid;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.navigation:hover {
+  color: rgb(0, 0, 0);
+}
+
+.ligne-separation {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 1%;
+  border-radius: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+footer {
+  bottom: 0;
+  background-color: #423f3e;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+}
+
+/*Logo dans barre de navigation*/
+.container-logo {
+  background-color: white;
+  width: 35px;
+  height: 50px;
+}
+
+.logo {
+  width: 37px;
+  margin-top: 3px;
+}
+
+.container-logo:hover {
+  scale: 110%;
+  transition-duration: 2S;
+}
+
+.titre {
+  font-size: 6.25vw;
+  margin-left: 50px;
+  font-family: "Knewave", cursive;
+  color: white;
+}
+
+.conteneur_projet {
+  min-height: 800px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/*------Caroussel-----------*/
+
+.blanc {
+  margin-bottom: 200px;
+}
+
+.splide {
+  margin: 0 auto;
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.thumbnail.is-active {
+  opacity: 1;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
