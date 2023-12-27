@@ -104,13 +104,13 @@ nav {
   }
 
   .conteneur_titre{
-    background-color: rgb(133, 103, 103);
     height: 100%;
     position: fixed;
   }
+  
   .conteneur_titre_projet{
     display: flex;
-    flex-direction: row ;
+    justify-content: space-between;
   }
 
 .conteneur_projet{
@@ -123,11 +123,18 @@ nav {
 }
 
 .titre_bord{
-    writing-mode: vertical-rl; /* vertical right-to-left */
     text-orientation: mixed; /* optionnel, permet de spécifier l'orientation du texte */
     white-space: nowrap; /* empêche le texte de passer à la ligne */
-
   }
+
+#titre_bord_droite{
+  writing-mode: vertical-rl; /* vertical right-to-left */
+}
+
+#titre_bord_gauche{
+  writing-mode: vertical-lr; /* Oriente le texte vers l'extérieur */
+  transform: rotate(180deg);
+}
 
 /*--------------PROJET 1---------------*/
 
@@ -147,7 +154,7 @@ nav {
 
 
 
-.info1{
+#info1{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -159,7 +166,7 @@ nav {
     height: 100%;
 }
 
-.info1:hover{
+#info1:hover{
     opacity: 1;
     background-color: rgba(66, 63, 62, 0.5); 
   
@@ -173,16 +180,16 @@ nav {
     transition: 0.6s transform;
 }
 
-.info1:hover .titre_projet {
+.info:hover .titre_projet {
   transition: 0.6s;
   transform: translate(0, -180%);
 }
 
-.info1 p {
+.info p {
   transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
 }
 
-.info1:hover p {
+.info:hover p {
   transition: 0.6s;
   transform: translate(0, -450%);
 }
@@ -193,7 +200,6 @@ nav {
 .projet2{
     background-image: url('../photo/affiche-203.svg');
     transition: filter 0.3s ease;
-
     /* Définissez le style de l'image de fond */
     background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
     background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
@@ -204,7 +210,7 @@ nav {
     grid-row-end: 2;
 }
 
-.info2{
+#info2{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -215,7 +221,7 @@ nav {
     cursor: pointer;
 }
 
-.info2:hover{
+#info2:hover{
     opacity: 1;
     background-color: rgba(66, 63, 62, 0.5); 
 
@@ -238,7 +244,7 @@ nav {
     
 }
 
-.info3{
+#info3{
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -249,9 +255,31 @@ nav {
     cursor: pointer;
 }
 
-.info3:hover{
+#info3:hover{
     opacity: 1;
     background-color: rgba(66, 63, 62, 0.5); 
+}
+
+#info3 .titre_projet{
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Knewave', cursive;
+  margin-top: 250px;
+  transition: 0.6s transform;
+}
+
+#info3:hover .titre_projet {
+transition: 0.6s;
+transform: translate(0, -130%);
+}
+
+#info3 p {
+transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
+}
+
+#info3:hover p {
+transition: 0.6s;
+transform: translate(0, -110%);
 }
 
 /*--------------PROJET 4---------------*/
@@ -270,7 +298,7 @@ nav {
   
 }
 
-.info4{
+#info4{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -281,7 +309,7 @@ nav {
   cursor: pointer;
 }
 
-.info4:hover{
+#info4:hover{
   opacity: 1;
   background-color: rgba(66, 63, 62, 0.5); 
 }
@@ -302,7 +330,7 @@ nav {
   
 }
 
-.info5{
+#info5{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -315,7 +343,7 @@ nav {
 
 }
 
-.info5:hover{
+#info5:hover{
   opacity: 1;
   background-color: rgba(66, 63, 62, 0.5); 
 }
@@ -336,7 +364,7 @@ nav {
   
 }
 
-.info6{
+#info6{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -349,7 +377,7 @@ nav {
 
 }
 
-.info6:hover{
+#info6:hover{
   opacity: 1;
   background-color: rgba(66, 63, 62, 0.5); 
 }
