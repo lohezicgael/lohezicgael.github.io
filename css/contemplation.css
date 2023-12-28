@@ -115,6 +115,7 @@ footer {
 
 .splide {
   margin: 0 auto;
+
 }
 
 .thumbnails {
@@ -141,4 +142,19 @@ footer {
 .thumbnail img {
   width: 100%;
   height: auto;
+}
+
+.conteneur_texte_projet{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.texte{
+  max-height: calc(100vh - 120px - 9rem);
+  padding: 1rem 3rem 3rem;
+  max-width: 250px;
+  background-color: #ce3737;
+  overflow: auto;
+  margin-left: 50px;
 }
