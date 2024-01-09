@@ -16,7 +16,7 @@ body {
 }
 
 :root {
-    --background-color: #D93A3A;
+    --background-color: #3F388E;
     --text-color: white;
     --heading-color: white;
   }
@@ -71,12 +71,20 @@ nav {
   footer {
     bottom: 0;
     background-color: #423f3e;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: "Kodchasan", sans-serif;
     font-size: 10px;
     text-align: center;
     width: 100%;
+    min-height: 50px;
     position: fixed;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between; 
   }
+  
+  .footer {margin: 10px;
+    margin-top: auto;
+    margin-bottom: auto;}
 
   /*Logo dans barre de navigation*/
 

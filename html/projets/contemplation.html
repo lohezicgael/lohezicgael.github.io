@@ -40,107 +40,42 @@
     
       <div class="conteneur_texte_projet">
       <div class="texte">
+      <h1>Contemplation</h1>
       <p>Les résultats de ces ateliers sont clairs : il est nécessaire de co-construire une gouvernance locale du climat sur Brest Métropole. Pour y parvenir, il faut mettre en place des principes forts et répondre à certaines interrogations. Les participants ont ainsi identifié les actions à mettre en place et les partenariats à nouer pour permettre une action collective efficace.
       </p>
       <p>Les résultats de ces ateliers sont clairs : il est nécessaire de co-construire une gouvernance locale du climat sur Brest Métropole. Pour y parvenir, il faut mettre en place des principes forts et répondre à certaines interrogations. Les participants ont ainsi identifié les actions à mettre en place et les partenariats à nouer pour permettre une action collective efficace.
       </p>
       <p>Les résultats de ces ateliers sont clairs : il est nécessaire de co-construire une gouvernance locale du climat sur Brest Métropole. Pour y parvenir, il faut mettre en place des principes forts et répondre à certaines interrogations. Les participants ont ainsi identifié les actions à mettre en place et les partenariats à nouer pour permettre une action collective efficace.
-      </p></div>
-
-
-    <div class="carousel">
-    <section id="main-slider" class="splide" aria-label="My Awesome Gallery">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img
-              src="https://source.unsplash.com/random/1000x1000?sig=1"
-              alt=""
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="https://source.unsplash.com/random/1000x1000?sig=2"
-              alt=""
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="https://source.unsplash.com/random/1000x1000?sig=3"
-              alt=""
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="https://source.unsplash.com/random/1000x1000?sig=4"
-              alt=""
-            />
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <ul id="thumbnails" class="thumbnails">
-      <li class="thumbnail">
-        <img src="https://source.unsplash.com/random/1000x1000?sig=1" alt="" />
-      </li>
-      <li class="thumbnail">
-        <img src="https://source.unsplash.com/random/1000x1000?sig=2" alt="" />
-      </li>
-      <li class="thumbnail">
-        <img src="https://source.unsplash.com/random/1000x1000?sig=3" alt="" />
-      </li>
-      <li class="thumbnail">
-        <img src="https://source.unsplash.com/random/1000x1000?sig=4" alt="" />
-      </li>
-    </ul>
+      </p>
+      <p class="auteur">Écrit par Gaël Lohézic</p>
     </div>
-    <script>
-      var splide = new Splide("#main-slider", {
-        width: 600,
-        height: 300,
-        pagination: false,
-        cover: true
-      });
+     
+  
 
-      var thumbnails = document.getElementsByClassName("thumbnail");
-      var current;
-
-      for (var i = 0; i < thumbnails.length; i++) {
-        initThumbnail(thumbnails[i], i);
-      }
-
-      function initThumbnail(thumbnail, index) {
-        thumbnail.addEventListener("click", function () {
-          splide.go(index);
-        });
-      }
-
-      splide.on("mounted move", function () {
-        var thumbnail = thumbnails[splide.index];
-
-        if (thumbnail) {
-          if (current) {
-            current.classList.remove("is-active");
-          }
-
-          thumbnail.classList.add("is-active");
-          current = thumbnail;
-        }
-      });
-
-      splide.mount();
-    </script>
+    <div class="box-container">
+      <div class="box">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <div class="overlay"></div>
+      </div>
+    </div>
   </div>
-
-
 <div class="blanc"></div>
 
   <footer>
-    <div class="ligne-separation"></div>
-    <h3>N’hésitez pas à me contacter !</h3>
-    <h3>06 79 68 86 43 | lohezicgael@gmail.com</h3>
-    <h3>© 2023 Gaël Lohézic, Inc. Tous droits réservés</h3>
+    <h3 class="footer">© 2023 Gaël Lohézic, Inc. Tous droits réservés</h3>
+    <h3 class="footer">06 79 68 86 43 | lohezicgael@gmail.com</h3>
+    <h3 class="footer">Mentions légales</h3>
   </footer>
 
   <script src="../../javascript/carousel.js"></script>

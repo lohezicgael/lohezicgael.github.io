@@ -14,8 +14,21 @@ body {
   flex: 1;
 }
 
+h1 {
+  font-size: 2vw;
+  font-family: 'Knewave', cursive;
+}
+
+p {
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.auteur{
+  font-style: italic;
+}
+
 :root {
-  --background-color: #D93A3A;
+  --background-color: #E0BE91;
   --text-color: white;
   --heading-color: white;
 }
@@ -45,11 +58,22 @@ nav {
   text-decoration: none;
   font-family: "Knewave", cursive;
   font-size: 1.25rem;
-  color: #D93A3A;
   border: solid;
   border-radius: 15px;
   margin-left: 10px;
 }
+
+#element2{
+color: #DC0B2B ;
+}
+
+#element3{
+  color:#41388E;
+  }
+
+  #element4{
+    color:#F28F34;
+    }
 
 .navigation:hover {
   color: rgb(0, 0, 0);
@@ -71,8 +95,16 @@ footer {
   font-size: 10px;
   text-align: center;
   width: 100%;
+  min-height: 50px;
   position: fixed;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between; 
 }
+
+.footer {margin: 10px;
+  margin-top: auto;
+  margin-bottom: auto;}
 
 /*Logo dans barre de navigation*/
 .container-logo {
@@ -110,39 +142,9 @@ footer {
 /*------Caroussel-----------*/
 
 .blanc {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
-.splide {
-  margin: 0 auto;
-
-}
-
-.thumbnails {
-  display: flex;
-  margin: 1rem auto 0;
-  padding: 0;
-  justify-content: center;
-}
-
-.thumbnail {
-  width: 70px;
-  height: 70px;
-  overflow: hidden;
-  list-style: none;
-  margin: 0 0.2rem;
-  cursor: pointer;
-  opacity: 0.3;
-}
-
-.thumbnail.is-active {
-  opacity: 1;
-}
-
-.thumbnail img {
-  width: 100%;
-  height: auto;
-}
 
 .conteneur_texte_projet{
   display: flex;
@@ -151,10 +153,87 @@ footer {
 }
 
 .texte{
-  max-height: calc(100vh - 120px - 9rem);
+  max-height: calc(105vh - 120px - 9rem);
   padding: 1rem 3rem 3rem;
   max-width: 250px;
-  background-color: #ce3737;
+  background-color: #c1a37c;
   overflow: auto;
   margin-left: 50px;
 }
+
+:root {
+  --bg1: url("../photo/projet2.svg");
+  --bg2: url("../photo/projet2.svg");
+  --bg3: url("../photo/projet2.svg");
+  --bg4: url("../photo/projet2.svg");
+  --bg5: url("../photo/projet2.svg");
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  max-width: 1100px;
+  max-height: 900px;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-right: 40px;
+}
+
+.box {
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.box:nth-child(1) {
+  background: var(--bg1) center/cover no-repeat;
+}
+
+.box:nth-child(2) {
+  background: var(--bg2) center/cover no-repeat;
+}
+
+.box:nth-child(3) {
+  background: var(--bg3) center/cover no-repeat;
+}
+
+.box:nth-child(4) {
+  background: var(--bg4) center/cover no-repeat;
+}
+
+.box:nth-child(5) {
+  background: var(--bg5) center/cover no-repeat;
+}
+
+.box .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  opacity: 0;
+}
+
+.box.closed {
+  width: 5%;
+}
+
+.box.closed .overlay {
+  opacity: 1;
+}
+
+.box.expanded {
+  width: 85%;
+}
+

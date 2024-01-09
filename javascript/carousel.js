@@ -1,31 +1,53 @@
-var splide = new Splide( '#main-carousel', {
-    pagination: false,
-  } );
-  
-  var thumbnails = document.getElementsByClassName( 'thumbnail' );
-  var current;
-  
-  for ( var i = 0; i < thumbnails.length; i++ ) {
-    initThumbnail( thumbnails[ i ], i );
+const boxes = document.querySelectorAll(".box");
+let activeIndex = 1;
+let isTransitioning = false;
+
+function updateCurrentImg() {
+  isTransitioning = true;
+
+  boxes.forEach((box, index) => {
+    const isActive = index === activeIndex;
+    box.classList.toggle("expanded", isActive);
+    box.classList.toggle("closed", !isActive);
+  });
+
+  setTimeout(() => {
+    isTransitioning = false;
+  }, 500);
+}
+
+function handleArrowKey(event) {
+  if (isTransitioning) {
+    return;
   }
-  
-  function initThumbnail( thumbnail, index ) {
-    thumbnail.addEventListener( 'click', function () {
-      splide.go( index );
-    } );
+
+  if (event.key === "ArrowRight") {
+    activeIndex = (activeIndex + 1) % boxes.length;
+  } else if (event.key === "ArrowLeft") {
+    activeIndex = (activeIndex - 1 + boxes.length) % boxes.length;
   }
-  
-  splide.on( 'mounted move', function () {
-    var thumbnail = thumbnails[ splide.index ];
-  
-    if ( thumbnail ) {
-      if ( current ) {
-        current.classList.remove( 'is-active' );
-      }
-  
-      thumbnail.classList.add( 'is-active' );
-      current = thumbnail;
-    }
-  } );
-  
-  splide.mount();
+
+  updateCurrentImg();
+}
+
+function handleBoxClick(index) {
+  if (isTransitioning) {
+    return;
+  }
+
+  if (index === activeIndex && boxes[index].classList.contains("expanded")) {
+    boxes.forEach((box) => box.classList.remove("closed", "expanded"));
+    activeIndex = 0;
+  } else {
+    activeIndex = index;
+    updateCurrentImg();
+  }
+}
+
+document.addEventListener("keydown", handleArrowKey);
+
+updateCurrentImg();
+
+boxes.forEach((box, index) => {
+  box.addEventListener("click", () => handleBoxClick(index));
+});
