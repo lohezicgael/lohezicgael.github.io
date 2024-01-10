@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 2vw;
+  font-size: 30px;
   font-family: 'Knewave', cursive;
 }
 
@@ -308,22 +308,22 @@ frame {
 
 
 @media only screen and (max-width: 767px) {
+
   .conteneur_texte_projet{
     display: flex;
     flex-direction: column;
-  
   }
 
-  .box-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 10px;
-    width: 100%;
-    max-width: 1100px;
-    max-height: 900px;
-    padding: 1rem;
-    margin: 0 auto;
-    margin-right: 40px;
-  }
+  
+.box-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  width: 80%;
+  height: 600px;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-right: 20px;
+}
 }
