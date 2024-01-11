@@ -47,7 +47,6 @@ nav {
     text-decoration: none;
     font-family: 'Knewave', cursive;
     font-size: 1.25rem;
-    color: #D93A3A;
     border: solid;
     border-radius: 15px;
     margin-left: 10px;
@@ -57,7 +56,17 @@ nav {
     color: rgb(0, 0, 0);
   }
 
-  
+  #element2{
+    color: #DC0B2B ;
+    }
+    
+    #element3{
+      color:#41388E;
+      }
+    
+      #element4{
+        color:#F28F34;
+        }
 
   .ligne-separation {
   background-color: rgb(255, 255, 255);
@@ -76,8 +85,6 @@ nav {
     text-align: center;
     width: 100%;
     min-height: 50px;
-    position: fixed;
-    display: flex;
     flex-direction:row ;
     justify-content: space-between; 
   }
@@ -384,4 +391,798 @@ transform: translate(0, -110%);
   opacity: 1;
   background-color: rgba(66, 63, 62, 0.5); 
 }
+
+
+#root{
+  display:none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+  
+  .conteneur_texte_projet{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+.box-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  width: 80%;
+  height: 600px;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-right: 20px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  width: 90%;
+  max-width: 1100px;
+  max-height: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-right: 40px;
+}
+
+.box {
+  width: 25%;
+  height: 70%;
+  cursor: pointer;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.texte{
+  max-height: calc(105vh - 120px - 9rem);
+  padding: 1rem 3rem 3rem;
+  max-width: 280px;
+  width: 100vh;
+  background-color: #c1a37c;
+  overflow: auto;
+  margin-left: 10px;
+}
+
+
+/***** Menu burger ****/
+#element1{
+  display: none;
+}
+
+.topnav {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+}
+.topnav_link {
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  text-decoration: none;
+}
+.topnav_link:hover {
+  color: #0078b4;
+}
+
+/* hide responsive menu */
+#topnav_hamburger_icon,
+#topnav_responsive_menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* hide classic menu */
+  #topnav_menu {
+    display: none;
+  }
+
+  
+#root{
+  display:block;
+}
+
+  /* position home link at left and hamburger at right */
+  #home_link {
+    flex-grow: 1;
+  }
+
+  /* disable horizontal scrolling  */
+  #root {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* show responsive menu and position at the right of the screen */
+  #topnav_responsive_menu {
+    display: block;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 99;
+
+    transform-origin: 0% 0%;
+    transform: translate(200%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #topnav_responsive_menu ul {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+
+    min-width: 50vw;
+    width: 100%;
+    height: 100vh;
+    padding: 56px 0 0;
+
+    text-align: center;
+
+    background: #ffffff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #topnav_responsive_menu li {
+    padding: 12px 24px;
+    font-size: 40px;
+    font-family: "knewave";
+    text-align: center;
+  }
+
+  #topnav_responsive_menu a {
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  /* And let's slide it in from the right */
+  #topnav_responsive_menu.open {
+    transform: none;
+    position: fixed;
+  }
+
+  /* ******************** HAMBURGER ICON ******************** */
+  /* define size and position of the hamburger link */
+  #topnav_hamburger_icon {
+    display: block;
+    position: relative;
+    margin: 16px;
+    width: 30px;
+    height: 28px;
+
+    z-index: 100;
+
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  /* define the style (size, color, position, animation, ...) of the 3 spans */
+  #topnav_hamburger_icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 5px;
+
+    background: #000000;
+    border-radius: 3px;
+
+    z-index: 100;
+
+    opacity: 1;
+    left: 0;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  /* set the 3 spans position to look like a hamburger */
+  #topnav_hamburger_icon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    background-color: #41388E;
+  }
+  #topnav_hamburger_icon span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    background-color: #f29036;
+  }
+  #topnav_hamburger_icon span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    transform-origin: left bottom;
+    background-color:#DC0B2B ;
+  }
+
+  /* the first span rotates 45° \ */
+  #topnav_hamburger_icon.open span:nth-child(1) {
+    width: 110%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* the second span disappears */
+  #topnav_hamburger_icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  /* the last span rotates -45° / */
+  #topnav_hamburger_icon.open span:nth-child(3) {
+    width: 110%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .bio{
+   color:#DC0B2B ;
+  }
+
+  .projets{
+color: #41388E ;
+  }
+
+  .contact{
+color: #f29036;
+
+  }
+
+  .categories:hover{
+    background-color: #eeeeee;
+  }
+
+/***Responsive grid****/
+.conteneur_projet{
+  min-height: 800px;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  margin-right: 10px;
+  margin-left: 10px;  
+}
+
+.titre{
+  margin-left: 10px;
+}
+
+/*--------------PROJET 1---------------*/
+
+.projet1{
+  background-image: url('../photo/projet2.svg');
+  transition: filter 0.3s ease;
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex; /* Utilisez display:flex; pour permettre l'alignement vertical */
+}
+
+
+
+#info1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+#info1:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+
+}
+
+.titre_projet{
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Knewave', cursive;
+  margin-top: 150px;
+  transition: 0.6s transform;
+}
+
+.info:hover .titre_projet {
+transition: 0.6s;
+transform: translate(0, -130%);
+}
+
+.info p {
+transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
+}
+
+.info:hover p {
+transition: 0.6s;
+transform: translate(0, -200%);
+}
+
+
+/*--------------PROJET 2---------------*/
+
+.projet2{
+  background-image: url('../photo/affiche-203.svg');
+  transition: filter 0.3s ease;
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#info2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+#info2:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+
+}
+
+/*--------------PROJET 3---------------*/
+
+.projet3{
+  background-image: url('../photo/Plan\ de\ travail\ 1-100.jpg');
+  transition: filter 0.3s ease;
+
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  
+}
+
+#info3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+#info3:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+}
+
+#info3 .titre_projet{
+font-size: 2em;
+text-align: center;
+font-family: 'Knewave', cursive;
+margin-top: 250px;
+transition: 0.6s transform;
+}
+
+#info3:hover .titre_projet {
+transition: 0.6s;
+transform: translate(0, -300%);
+}
+
+#info3 p {
+transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
+}
+
+#info3:hover p {
+transition: 0.6s;
+transform: translate(0, -420%);
+}
+
+/*--------------PROJET 4---------------*/
+.projet4{
+background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
+transition: filter 0.3s ease;
+
+/* Définissez le style de l'image de fond */
+background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+background-position: center center; 
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 4;
+grid-row-end: 5;
+
+}
+
+#info4{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 4;
+grid-row-end: 5;
+text-align: center;
+opacity: 0; /* Le texte est initialement invisible */
+transition: opacity 0.3s ease;
+cursor: pointer;
+}
+
+#info4:hover{
+opacity: 1;
+background-color: rgba(66, 63, 62, 0.5); 
+}
+
+/*--------------PROJET 5---------------*/
+.projet5{
+background-image: url('../photo/projet4.svg');
+transition: filter 0.3s ease;
+
+/* Définissez le style de l'image de fond */
+background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+background-position: center center; 
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 5;
+grid-row-end: 6;
+
+}
+
+#info5{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 5;
+grid-row-end: 6;
+text-align: center;
+opacity: 0; /* Le texte est initialement invisible */
+transition: opacity 0.3s ease;
+cursor: pointer;
+  
+
+}
+
+#info5:hover{
+opacity: 1;
+background-color: rgba(66, 63, 62, 0.5); 
+}
+
+/*--------------PROJET 6---------------*/
+.projet6{
+background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
+transition: filter 0.3s ease;
+
+/* Définissez le style de l'image de fond */
+background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+background-position: center center; 
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 6;
+grid-row-end: 7;
+
+}
+
+#info6{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 6;
+grid-row-end: 7;
+text-align: center;
+opacity: 0; /* Le texte est initialement invisible */
+transition: opacity 0.3s ease;
+cursor: pointer;
+  
+
+}
+
+#info6:hover{
+opacity: 1;
+background-color: rgba(66, 63, 62, 0.5); 
+}
+
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+/*--------------PROJET 1---------------*/
+
+.projet1{
+  background-image: url('../photo/projet2.svg');
+  transition: filter 0.3s ease;
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex; /* Utilisez display:flex; pour permettre l'alignement vertical */
+}
+
+
+
+#info1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+#info1:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+
+}
+
+.titre_projet{
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Knewave', cursive;
+  margin-top: 150px;
+  transition: 0.6s transform;
+}
+
+.info:hover .titre_projet {
+transition: 0.6s;
+transform: translate(0, -130%);
+}
+
+.info p {
+transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
+}
+
+.info:hover p {
+transition: 0.6s;
+transform: translate(0, 200%);
+}
+
+
+/*--------------PROJET 2---------------*/
+
+.projet2{
+  background-image: url('../photo/affiche-203.svg');
+  transition: filter 0.3s ease;
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#info2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+#info2:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+
+}
+
+/*--------------PROJET 3---------------*/
+
+.projet3{
+  background-image: url('../photo/Plan\ de\ travail\ 1-100.jpg');
+  transition: filter 0.3s ease;
+
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  
+}
+
+#info3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+#info3:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+}
+
+#info3 .titre_projet{
+font-size: 2em;
+text-align: center;
+font-family: 'Knewave', cursive;
+margin-top: 250px;
+transition: 0.6s transform;
+}
+
+#info3:hover .titre_projet {
+transition: 0.6s;
+transform: translate(0, -300%);
+}
+
+#info3 p {
+transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
+}
+
+#info3:hover p {
+transition: 0.6s;
+transform: translate(0, -420%);
+}
+
+/*--------------PROJET 4---------------*/
+.projet4{
+background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
+transition: filter 0.3s ease;
+
+/* Définissez le style de l'image de fond */
+background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+background-position: center center; 
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 4;
+grid-row-end: 5;
+
+}
+
+#info4{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 4;
+grid-row-end: 5;
+text-align: center;
+opacity: 0; /* Le texte est initialement invisible */
+transition: opacity 0.3s ease;
+cursor: pointer;
+}
+
+#info4:hover{
+opacity: 1;
+background-color: rgba(66, 63, 62, 0.5); 
+}
+
+/*--------------PROJET 5---------------*/
+.projet5{
+background-image: url('../photo/projet4.svg');
+transition: filter 0.3s ease;
+
+/* Définissez le style de l'image de fond */
+background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+background-position: center center; 
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 5;
+grid-row-end: 6;
+
+}
+
+#info5{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 5;
+grid-row-end: 6;
+text-align: center;
+opacity: 0; /* Le texte est initialement invisible */
+transition: opacity 0.3s ease;
+cursor: pointer;
+  
+
+}
+
+#info5:hover{
+opacity: 1;
+background-color: rgba(66, 63, 62, 0.5); 
+}
+
+/*--------------PROJET 6---------------*/
+.projet6{
+background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
+transition: filter 0.3s ease;
+
+/* Définissez le style de l'image de fond */
+background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+background-position: center center; 
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 6;
+grid-row-end: 7;
+
+}
+
+#info6{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 6;
+grid-row-end: 7;
+text-align: center;
+opacity: 0; /* Le texte est initialement invisible */
+transition: opacity 0.3s ease;
+cursor: pointer;
+  
+
+}
+
+#info6:hover{
+opacity: 1;
+background-color: rgba(66, 63, 62, 0.5); 
+}
+
+}
+
+
+
+
+
 

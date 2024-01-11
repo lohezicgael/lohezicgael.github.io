@@ -358,9 +358,10 @@ frame {
   max-height: calc(105vh - 120px - 9rem);
   padding: 1rem 3rem 3rem;
   max-width: 280px;
+  width: 100vh;
   background-color: #c1a37c;
   overflow: auto;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 
@@ -374,6 +375,7 @@ frame {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 68px;
 }
 .topnav_link {
   color: rgb(0, 0, 0);
@@ -440,6 +442,7 @@ frame {
     top: 0;
 
     min-width: 50vw;
+    width: 100%;
     height: 100vh;
     padding: 56px 0 0;
 
@@ -452,11 +455,13 @@ frame {
 
   #topnav_responsive_menu li {
     padding: 12px 24px;
+    font-size: 40px;
+    font-family: "knewave";
+    text-align: center;
   }
 
   #topnav_responsive_menu a {
     white-space: nowrap;
-    color: #000000;
     text-decoration: none;
   }
 
@@ -472,7 +477,7 @@ frame {
     display: block;
     position: relative;
     margin: 16px;
-    width: 33px;
+    width: 30px;
     height: 28px;
 
     z-index: 100;
@@ -515,6 +520,7 @@ frame {
     -moz-transform-origin: left top;
     -o-transform-origin: left top;
     transform-origin: left top;
+    background-color: #41388E;
   }
   #topnav_hamburger_icon span:nth-child(2) {
     top: 12px;
@@ -522,6 +528,7 @@ frame {
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
+    background-color: #f29036;
   }
   #topnav_hamburger_icon span:nth-child(3) {
     top: 24px;
@@ -529,11 +536,7 @@ frame {
     -moz-transform-origin: left bottom;
     -o-transform-origin: left bottom;
     transform-origin: left bottom;
-  }
-
-  /* change color when opening the menu */
-  #topnav_hamburger_icon.open span {
-    background: #333;
+    background-color:#DC0B2B ;
   }
 
   /* the first span rotates 45° \ */
@@ -558,6 +561,23 @@ frame {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  .bio{
+   color:#DC0B2B ;
+  }
+
+  .projets{
+color: #41388E ;
+  }
+
+  .contact{
+color: #f29036;
+
+  }
+
+  .categories:hover{
+    background-color: #eeeeee;
   }
 }
 }

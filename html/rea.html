@@ -47,6 +47,36 @@
         <a class="navigation" id="element4" href="../html/contact.html">Contact</a>
       </div>
     </nav>
+
+    <div id="root">
+      <div id="topnav" class="topnav">
+        <div id="home_link" class="topnav_link"><a href="../html/index.html"> <img class="logo" src="../../photo/mon-logo.svg"
+          alt="logo"> </a>
+    </div>
+    
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="/about">ABOUT</a>
+          <a class="topnav_link" href="/contact-us">CONTACT</a>
+        </nav>
+    
+        <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li class="categories"><a class="bio" href="/">Bio</a></li>
+            <li class="categories"><a class="projets" href="/about">Projets</a></li>
+            <li class="categories"><a class="contact" href="/contact-us">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
 
@@ -114,7 +144,7 @@
       <h3 class="footer">Mentions légales</h3>
     </footer>
 
-
+    <script src="../../javascript/menu.js"></script>
 </body>
 
 </html>
