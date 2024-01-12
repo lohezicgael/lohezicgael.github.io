@@ -354,16 +354,15 @@ frame {
   overflow: hidden;
 }
 
+
 .texte{
   max-height: calc(105vh - 120px - 9rem);
   padding: 1rem 3rem 3rem;
   max-width: 280px;
-  width: 100vh;
-  background-color: #c1a37c;
+  background-color: #29206c;
   overflow: auto;
   margin-left: 10px;
 }
-
 
 /***** Menu burger ****/
 #element1{
