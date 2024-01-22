@@ -28,7 +28,7 @@ p {
 }
 
 :root {
-  --background-color: #312682;
+  --background-color: #FDF203;
   --text-color: white;
   --heading-color: white;
 }
@@ -156,15 +156,15 @@ footer {
   max-height: calc(105vh - 120px - 9rem);
   padding: 1rem 3rem 3rem;
   max-width: 250px;
-  background-color: #29206c;
+  background-color: #d5b904;
   overflow: auto;
   margin-left: 50px;
 }
 
 :root {
-  --bg1: url('../../photo/Plan\ de\ travail\ 1-100.jpg');
-  --bg2: url('../../photo/Plan\ de\ travail\ 1-100.jpg');
-  --bg3: url('../../photo/Plan\ de\ travail\ 1-100.jpg');
+  --bg1: url('../../photo/projet4.svg');
+  --bg2: url('../../photo/projet4.svg');
+  --bg3: url('../../photo/projet4.svg');
   --bg4: url("../photo/projet2.svg");
   --bg5: url("../photo/projet2.svg");
 }
