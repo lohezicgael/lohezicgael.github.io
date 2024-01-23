@@ -24,6 +24,17 @@ body {
   background-size: cover;
 }
 
+#element2{
+  color: #DC0B2B ;
+  }
+  
+  #element3{
+    color:#41388E;
+    }
+  
+    #element4{
+      color:#F28F34;
+      }
 /*Ma barre de navigation*/
 nav {
   display: flex;
@@ -40,6 +51,7 @@ nav {
   display: flex;
   justify-content: center;
 }
+
 
 /*Mes onglets de barre de navigation*/
 .navigation {

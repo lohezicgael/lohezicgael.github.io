@@ -163,10 +163,8 @@ footer {
 
 :root {
   --bg1: url('../../photo/affiche-203.svg');
-  --bg2: url("../../photo/affiche-203.svg");
-  --bg3: url("../../photo/affiche-203.svg");
-  --bg4: url("../photo/projet2.svg");
-  --bg5: url("../photo/projet2.svg");
+  --bg2: url("../../photo/flyer\ verso\ SAE\ 103[608].png");
+ 
 }
 
 .box-container {

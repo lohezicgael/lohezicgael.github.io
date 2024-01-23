@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Gaël Lohézic</title>
+  <link rel="shortcut icon" href="../photo/mon-logo-blanc.svg" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/rea.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    // Fonction JavaScript pour changer de page en fonction de l'élément cliqué
+    function changerPage(numeroProjet) {
+      // Utilisez un switch ou des conditions pour déterminer la page en fonction du numéro de projet
+      switch (numeroProjet) {
+        case 1:
+          window.location.href = "projets/contemplation.html";
+          break;
+        case 2:
+          window.location.href = "projets/faitesdunumerique.html";
+          break;
+        case 3:
+          window.location.href = "projets/tutoreferencement.html";
+          break;
+        case 4:
+          window.location.href = "projets/victor.html";
+          break;
+        case 5:
+        window.location.href = "projets/analysepaula.html";
+        break;
+        case 6:
+        window.location.href = "projets/autoportrait.html";
+        break;
+        case 7:
+        window.location.href = "projets/nintendo.html";
+        break;
+        default:
+          // Redirection par défaut si le numéro de projet n'est pas géré
+          window.location.href = "page-par-defaut.html";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <nav id="element1">
+      <div class="container-logo"><a href="../html/index.html"> <img class="logo" src="../photo/mon-logo.svg"
+            alt="logo"> </a>
+      </div>
+      <div class="nav-container">
+        <a class="navigation" id="element2" href="../html/bio.html">Bio</a>
+        <a class="navigation" id="element3" href="../html/rea.html">Projets</a>
+        <a class="navigation" id="element4" href="../html/contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div id="root">
+      <div id="topnav" class="topnav">
+        <div id="home_link" class="topnav_link"><a href="../html/index.html"> <img class="logo" src="../../photo/mon-logo.svg"
+          alt="logo"> </a>
+    </div>
+    
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="/about">ABOUT</a>
+          <a class="topnav_link" href="/contact-us">CONTACT</a>
+        </nav>
+    
+        <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li class="categories"><a class="bio" href="../../html/bio.html">Bio</a></li>
+            <li class="categories"><a class="projets" href="../../html/rea.html">Projets</a></li>
+            <li class="categories"><a class="contact" href="../../html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <h1 class="titre">Mentions légales</h1>
+
+ <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site Portfolio - Gaël Lohézic l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+  Edition du site</p>
+  
+  <p>Le présent site, accessible à l’URL https://lohezicgael.github.io/html/index.html (le « Site »), est édité par : Gaël Lohézic, résidant 56100 Lorient, de nationalité Française (France), né le 02/08/2004.
+  Hébergement</p>
+  
+  <p>Le Site est hébergé par la société GitHub, situé 10 Rue de Penthièvre, 75008 Paris, (contact téléphonique ou email : +33177623003).
+  Directeur de publication</p>
+  
+  <p>Le Directeur de la publication du Site est Gaël Lohézic.
+  Nous contacter
+  
+      Par téléphone : +33679688643
+      Par email : lohezicgael@gmail.com
+    </p>
+  
+
+    <div class="parallax"></div>
+    
+    
+
+
+
+    <footer>
+      <h3 class="footer">© 2024 Gaël Lohézic, Inc. Tous droits réservés</h3>
+      <h3 class="footer">06 79 68 86 43 | lohezicgael@gmail.com</h3>
+      <h3 class="footer">Mentions légales</h3>
+    </footer>
+
+    <script src="../../javascript/menu.js"></script>
+</body>
+
+</html>
