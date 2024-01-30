@@ -1,390 +1,249 @@
+
+
 html,
 body {
+  margin: 0;
   padding: 0;
-  margin: 0;
+  height: 100%;
+ 
 }
 
-/*Couleurs de départ*/
-:root {
-  --background-color: #D93A3A;
-  --text-color: white;
-  --heading-color: white;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-h1,
-h2,
-h3,
-p {
-  color: var(--heading-color);
-}
-
-.navigation {
-  color: var(--background-color);
-}
-
-body {
-  background-image: url("../photo/fond_contact.svg");
-  background-size: cover;
-}
-
-#element2{
-  color: #DC0B2B ;
-  }
-  
-  #element3{
-    color:#41388E;
-    }
-  
-    #element4{
-      color:#F28F34;
-      }
-      
-/*Ma barre de navigation*/
-nav {
-  display: flex;
-  background-color: #D93A3A;
-  padding: 5px;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0px 10px 20px 0px #920707;
-}
-
-/*Mes positionnements d'onglets de barre de navigation*/
-.nav-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-/*Mes onglets de barre de navigation*/
-.navigation {
-  padding: 10px;
-  text-decoration: none;
-  font-family: 'Knewave', cursive;
-  font-size: 1.25rem;
-  color: #D93A3A;
-  border: solid;
-  border-radius: 15px;
-  margin-left: 10px;
-}
-
-.navigation:hover {
-  color: rgb(0, 0, 0);
-}
-
-h1 {
-  font-size: 6.25vw;
-  font-family: 'Knewave', cursive;
-  margin: 10px;
-  z-index: 1;
-  margin-left: 165px;
-}
-
-h2 {
-  font-size: 5rem;
-  font-family: 'Knewave', cursive;
-  text-align: center;
-  margin: 0;
-  z-index: 1;
-}
-
-h3 {
-  font-family: 'Kodchasan', sans-serif;
-  bottom: 0;
-  color: white;
-}
-
-footer {
-  display: flex;
-  bottom: 0;
-  color: white;
-  margin-left: 50px;
-}
-
-/*Mes nuages pour décorer mon site */
-.nuage {
-  height: 500px;
-  width: 500px;
-  z-index: 0;
-  position: absolute;
+.nuage { 
+  width: 14em;
   opacity: 60%;
-  z-index: 0;
+ 
 }
 
-/*Mouvement des nuages*/
-@keyframes horizontal-movement-droite {
+@keyframes deplacement-droite {
   from {
-    transform: translateX(0);
+    transform: translateX(-60vw);
   }
-
   to {
-    transform: translateX(1600px);
+    transform: translateX(70vw);
   }
 }
 
-#nuage1 {
-  animation: horizontal-movement-droite 23s linear infinite;
-  height: 200px;
-  width: 200px;
+.nuage-animation {
+  animation: deplacement-droite 14s linear infinite;
 }
 
-#nuage2 {
-  animation: horizontal-movement-droite 15s linear infinite;
-  height: 200px;
-  width: 200px;
+.background-container {
+  background: url('../photo/fond_contact.svg') ;
+  background-size: cover; /* ou background-size: 100% 100%; pour remplir entièrement */
+  background-position: bottom;
+  height: 90%; /* Pour s'assurer que la div occupe toute la hauteur du body */
 }
 
-/*Mouvement des nuages*/
-@keyframes horizontal-movement-gauche {
-  from {
-    transform: translateX(1600px);
-  }
-
-  to {
-    transform: translateX(-240px);
-  }
-}
-
-#nuage3 {
-  animation: horizontal-movement-gauche 20s linear infinite;
-  height: 250px;
-  width: 250px;
-}
-
-/*Texte situé à coté du formulaire*/
-.text {
-  margin-left: 50px;
-  width: 600px;
-  font-size: 1.25rem;
-  font-family: 'Kodchasan', sans-serif;
-  color: white;
-  text-align: center;
-}
-
-/*Bouton index qui permet de reveni à la page index (Gaël Lohézic)*/
-.index {
-  text-decoration: none;
-  font-family: 'Kodchasan', sans-serif;
-  color: rgb(0, 0, 0);
-  height: 100px;
-  width: 100px;
-}
-
-.container-index {
-  width: 200px;
-  height: 200px;
-  margin-left: 1400px;
-  padding-top: 140px;
-}
-
-.container-index:hover {
-  transform: translate(5px, 3px);
-  transition: 3s;
-}
-
-/*Taille des logos de mes réseaux*/
-.reseaux {
-  width: 50px;
-}
-
-/*Barre qui contient tous les réseaux à la fin de la page*/
-.container-reseaux {
-  width: 1000px;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-}
-
-/*Logo situé dans la barre de nav qui permet de revenir à la page index en haut à gauche */
-.container-logo {
-  background-color: white;
-  width: 35px;
-  height: 50px;
-}
-
-.logo {
-  width: 37px;
-  margin-top: 3px;
-}
-
-.container-logo:hover {
-  scale: 110%;
-  transition-duration: 2S;
-}
-
-p {
-  margin-left: 10px;
-  margin-top: 20px;
-  left: 0;
-}
-
-/*Formulaire afin de me contacter*/
-.formulaire {
+.conteneur {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  font-family: 'Kodchasan', sans-serif;
-  margin-left: 200px;
+  align-items: center;
+  height: 100%;
+  bottom: 0;
+  flex: 1;
 }
 
-.container-text-formulaire {
-  display: flex;
-  margin-left: 100px;
-}
-
-#prenom {
-  border-radius: 1em;
-}
-
-#nom {
-  border-radius: 1em;
-}
-
-#email {
-  border-radius: 1em;
-}
-
-#objet {
-  border-radius: 1em;
-}
-
-#message {
-  border-radius: 1em;
-}
-
-#envoyer {
-  --c: #000000;
-  color: var(--c);
-  font-size: 12px;
-  border: 0.3em solid var(--c);
-  border-radius: 1em;
-  width: 12em;
-  height: 3em;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-align: center;
-  line-height: 3em;
-  position: relative;
-  margin-top: 0.7em;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Kodchasan', sans-serif;
-}
-
-
-.linkedin {
-  width: 50px;
-}
-
-form :focus {
-  outline: none;
-}
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-left: 0;
+:root {
+    --background-color: #F28F34;
+    --text-color: white;
+    --heading-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
   }
 
-  .text {
-    font-size: 1.5em;
-  }
-
-  .container-reseaux {
+  #element2{
+    color: #DC0B2B ;
+    }
+    
+    #element3{
+      color:#41388E;
+      }
+    
+      #element4{
+        color:#F28F34;
+        }
+        
+nav {
     display: flex;
-    flex-wrap: wrap;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   }
-
-  .container-text-formulaire {
+  
+  /*Mes positionnements d'onglets de barre de navigation*/
+  .nav-container {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
+    justify-content: center;
+  }
+  
+  /*Mes onglets de barre de navigation*/
+  .navigation {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Knewave', cursive;
+    font-size: 1.25rem;
+    color: #D93A3A;
+    border: solid;
+    border-radius: 15px;
+    margin-left: 10px;
   }
 
-  .text {
-    margin-left: 0;
-  }
-
-  .formulaire {
-    margin-left: 50px;
+  .navigation:hover {
+    color: rgb(0, 0, 0);
   }
 
   footer {
+    bottom: 0;
+    background-color: #423f3e;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 10px;
     text-align: center;
-    margin-left: 0;
-  }
-
-  .container-reseaux {
-    width: 300px;
-
-    margin-top: 50px;
+    width: 100%;
+    min-height: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction:row ;
+    justify-content: space-between; 
   }
 
-  .index {
-    display: none;
+  .footer {margin: 10px;
+    margin-top: auto;
+    margin-bottom: auto;}
+
+  /*Logo dans barre de navigation*/
+
+  .container-logo {
+    background-color: white;
+    width: 35px;
+    height: 50px;
+  }
+  
+  .logo {
+    width: 37px;
+    margin-top: 3px;
+  }
+  
+  .container-logo:hover {
+    scale: 110%;
+    transition-duration: 2S;
   }
 
-  .container-index {
-    display: none;
+  /*Mes titres*/
+  
+ h1 {
+    font-size: 6.25vw;
+    margin-left: 50px;
+    font-family: 'Knewave', cursive;
+
   }
 
-
-  .nuage {
-    height: 500px;
-    width: 500px;
-    opacity: 60%;
-    z-index: 0;
+  h2 {
+    font-size: 3.75rem;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 10;
+    text-align: center;
+    margin: 0;
+    
+    
   }
 
-  /*Mouvement des nuages*/
-  @keyframes horizontal-movement-droite {
+  /*Animation du texte qui change pour mettre différents adjectifs me qualifiant*/
+.text {
+    animation: text-change 10s linear infinite;
+  }
+  
+  @keyframes text-change {
     from {
-      transform: translateX(-100px);
+      transform: translateY(0px);
+      opacity: 0;
     }
-
+  
     to {
-      transform: translateX(300px);
+      transform: translateY(20px);
+      opacity: 1;
     }
   }
 
-  #nuage1 {
-    animation: horizontal-movement-droite 7s linear infinite;
-    height: 200px;
-    width: 200px;
-  }
 
-  #nuage2 {
-    animation: horizontal-movement-droite 6s linear infinite;
-    height: 200px;
-    width: 200px;
-  }
-
-  /*Mouvement des nuages*/
-  @keyframes horizontal-movement-gauche {
-    from {
-      transform: translateX(300px);
-    }
-
-    to {
-      transform: translateX(-100px);
-    }
-  }
-
-  #nuage3 {
-    animation: horizontal-movement-gauche 6s linear infinite;
-    height: 250px;
-    width: 250px;
-  }
+.conteneur_contact{
+    width: 40%;
+    height: 45%;
+    border: solid black;
+    background-color: #f29034a8;
+    margin-top: 130px;
+    border-radius: 50px;
+    padding: 30px;
+    font-family: 'Kodchasan', sans-serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.61);
 }
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contacter{
+    font-size: 2.5em;
+}
+
+
+.reseaux{
+    display: flex;
+    flex-direction: column;
+}
+
+.rs{
+    width: 60px;
+    margin: 10px;
+}
+
+.reseaux1{
+    display: flex;
+    flex-direction: column;
+}
+
+.reseaux2{
+    display: flex;
+    flex-direction: column;
+}
+
+.infos{
+  font-size: 1.2em;
+  margin-right: 80px;
+}
+
+#mail{
+  width: 63px;
+}
+
+  
+/* Media Query pour les tablettes (ajustez les valeurs en conséquence) */
+@media only screen and (max-width: 916px) {
+  .conteneur_contact{
+    width: 40%;
+    height: 75%;
+    border: solid black;
+    background-color: #d52f2f6f;
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 30px;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+}
+
+/* Media Query pour les téléphones (ajustez les valeurs en conséquence) */
+@media only screen and (max-width: 480px) {
+ .contact{
+  display: flex;
+  flex-direction: column;
+ }
+
+  
+}
+

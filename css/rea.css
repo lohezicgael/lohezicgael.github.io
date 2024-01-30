@@ -523,33 +523,6 @@ transform: translate(0, -110%);
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  /***** Menu burger ****/
-#element1{
-  display: none;
-}
-
-.topnav {
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 68px;
-}
-.topnav_link {
-  color: rgb(0, 0, 0);
-  padding: 12px;
-  text-decoration: none;
-}
-.topnav_link:hover {
-  color: #0078b4;
-}
-
-/* hide responsive menu */
-#topnav_hamburger_icon,
-#topnav_responsive_menu {
-  display: none;
-}
 
 @media only screen and (max-width: 768px) {
   /* hide classic menu */
