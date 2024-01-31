@@ -18,21 +18,52 @@
 
 <body>
   <header>
-    <nav>
+    <nav id="element1">
       <div class="container-logo"><a href="../html/index.html"> <img class="logo" src="../photo/mon-logo.svg"
-            alt="logo"> </a></div>
+            alt="logo"> </a>
+      </div>
       <div class="nav-container">
-        <a class="navigation" id="element2"  href="../html/bio.html">Bio</a>
-        <a class="navigation" id="element3"  href="../html/rea.html">Projets</a>
-        <a class="navigation" id="element4"  href="../html/contact.html">Contact</a>
+        <a class="navigation" id="element2" href="../html/bio.html">Bio</a>
+        <a class="navigation" id="element3" href="../html/rea.html">Projets</a>
+        <a class="navigation" id="element4" href="../html/contact.html">Contact</a>
       </div>
     </nav>
+    <div id="root">
+      <div id="topnav" class="topnav">
+        <div id="home_link" class="topnav_link"><a href="../html/index.html"> <img class="logo" src="../../photo/mon-logo.svg"
+          alt="logo"> </a>
+    </div>
+    
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="/about">ABOUT</a>
+          <a class="topnav_link" href="/contact-us">CONTACT</a>
+        </nav>
+    
+        <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li class="categories"><a class="bio" href="../../html/bio.html">Bio</a></li>
+            <li class="categories"><a class="projets" href="../../html/rea.html">Projets</a></li>
+            <li class="categories"><a class="contact" href="../../html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
   </header>
 
   <h1>À propos</h1>
 
   <div class="photo-text">
-    <p class="bio">Je m’appelle <b>Gaël Lohézic</b> et je suis étudiant en deuxième année
+    <p class="bio_text">Je m’appelle <b>Gaël Lohézic</b> et je suis étudiant en deuxième année
       de <b>BUT MMI</b> (Métiers du Multimédia et de l’Internet) à Lannion.
       Je suis né à Lorient et je suis passionné par le monde
       de la <b>technologie</b> et du <b>dessin</b> depuis mon plus jeune âge.
@@ -96,6 +127,7 @@
     <h3 class="footer">06 79 68 86 43 | lohezicgael@gmail.com</h3>
     <h3 class="footer">Mentions légales</h3>
   </footer>
+  <script src="../../javascript/menu.js"></script>
 </body>
 
 </html>

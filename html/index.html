@@ -29,6 +29,36 @@
         <a class="navigation" id="element4" href="../html/contact.html">Contact</a>
       </div>
     </nav>
+    <div id="root">
+      <div id="topnav" class="topnav">
+        <div id="home_link" class="topnav_link"><a href="../html/index.html"> <img class="logo" src="../../photo/mon-logo.svg"
+          alt="logo"> </a>
+    </div>
+    
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="/about">ABOUT</a>
+          <a class="topnav_link" href="/contact-us">CONTACT</a>
+        </nav>
+    
+        <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li class="categories"><a class="bio" href="../../html/bio.html">Bio</a></li>
+            <li class="categories"><a class="projets" href="../../html/rea.html">Projets</a></li>
+            <li class="categories"><a class="contact" href="../../html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
   </header>
 
   <div class="background-container">
@@ -57,8 +87,8 @@
       <h3 class="footer">06 79 68 86 43 | lohezicgael@gmail.com</h3>
       <h3 class="footer">Mentions légales</h3>
     </footer>
-  </div>
 
+  <script src="../../javascript/menu.js"></script>
 </body>
 
 </html>
