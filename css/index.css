@@ -165,7 +165,7 @@ nav {
   }
 
   /*Animation du texte qui change pour mettre différents adjectifs me qualifiant*/
-.text {
+#text {
     animation: text-change 10s linear infinite;
   }
   
@@ -646,3 +646,42 @@ color: #f29036;
    background-color: #eeeeee;
  }
  }
+
+ /********Animation projets***********/
+
+
+
+/*
+==============================================
+ANIMATION TIME!!!!
+==============================================
+*/
+/*
+==============================================
+slideDown
+==============================================
+*/
+
+
+.slideDown {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+ 
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+}

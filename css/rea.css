@@ -119,7 +119,7 @@ nav {
     transition-duration: 2S;
   }
 
-  .titre {
+  #titre {
     font-size: 6.25vw;
     margin-left: 50px;
     font-family: 'Knewave', cursive;
@@ -156,7 +156,7 @@ nav {
 
 /*--------------PROJET 1---------------*/
 
-.projet1{
+#projet1{
     background-image: url('../photo/projet2.svg');
     transition: filter 0.3s ease;
     /* Définissez le style de l'image de fond */
@@ -215,7 +215,7 @@ nav {
 
 /*--------------PROJET 2---------------*/
 
-.projet2{
+#projet2{
     background-image: url('../photo/affiche-203.svg');
     transition: filter 0.3s ease;
     /* Définissez le style de l'image de fond */
@@ -247,7 +247,7 @@ nav {
 
 /*--------------PROJET 3---------------*/
 
-.projet3{
+#projet3{
     background-image: url('../photo/Plan\ de\ travail\ 1-100.jpg');
     transition: filter 0.3s ease;
 
@@ -301,7 +301,7 @@ transform: translate(0, -110%);
 }
 
 /*--------------PROJET 4---------------*/
-.projet4{
+#projet4{
   background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
   transition: filter 0.3s ease;
 
@@ -333,7 +333,7 @@ transform: translate(0, -110%);
 }
 
 /*--------------PROJET 5---------------*/
-.projet5{
+#projet5{
   background-image: url('../photo/projet4.svg');
   transition: filter 0.3s ease;
 
@@ -367,7 +367,7 @@ transform: translate(0, -110%);
 }
 
 /*--------------PROJET 6---------------*/
-.projet6{
+#projet6{
   background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
   transition: filter 0.3s ease;
 
@@ -406,7 +406,7 @@ transform: translate(0, -110%);
 }
 
 /*--------------PROJET 7---------------*/
-.projet7{
+#projet7{
   background-image: url('../photo/Poster_lohezic_leguennec.png');
   transition: filter 0.3s ease;
   
@@ -722,13 +722,13 @@ color: #f29036;
   margin-left: 10px;  
 }
 
-.titre{
+#titre{
   margin-left: 10px;
 }
 
 /*--------------PROJET 1---------------*/
 
-.projet1{
+#projet1{
   background-image: url('../photo/projet2.svg');
   transition: filter 0.3s ease;
   /* Définissez le style de l'image de fond */
@@ -787,7 +787,7 @@ transform: translate(0, -200%);
 
 /*--------------PROJET 2---------------*/
 
-.projet2{
+#projet2{
   background-image: url('../photo/affiche-203.svg');
   transition: filter 0.3s ease;
   /* Définissez le style de l'image de fond */
@@ -819,7 +819,7 @@ transform: translate(0, -200%);
 
 /*--------------PROJET 3---------------*/
 
-.projet3{
+#projet3{
   background-image: url('../photo/Plan\ de\ travail\ 1-100.jpg');
   transition: filter 0.3s ease;
 
@@ -873,7 +873,7 @@ transform: translate(0, -420%);
 }
 
 /*--------------PROJET 4---------------*/
-.projet4{
+#projet4{
 background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
 transition: filter 0.3s ease;
 
@@ -905,7 +905,7 @@ background-color: rgba(66, 63, 62, 0.5);
 }
 
 /*--------------PROJET 5---------------*/
-.projet5{
+#projet5{
 background-image: url('../photo/projet4.svg');
 transition: filter 0.3s ease;
 
@@ -939,7 +939,7 @@ background-color: rgba(66, 63, 62, 0.5);
 }
 
 /*--------------PROJET 6---------------*/
-.projet6{
+#projet6{
 background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
 transition: filter 0.3s ease;
 
@@ -973,7 +973,7 @@ background-color: rgba(66, 63, 62, 0.5);
 }
 
 /*--------------PROJET 7---------------*/
-.projet7{
+#projet7{
   background-image: url('../photo/Poster_lohezic_leguennec.png');
   transition: filter 0.3s ease;
   
@@ -1014,7 +1014,7 @@ background-color: rgba(66, 63, 62, 0.5);
 
 /*--------------PROJET 1---------------*/
 
-.projet1{
+#projet1{
   background-image: url('../photo/projet2.svg');
   transition: filter 0.3s ease;
   /* Définissez le style de l'image de fond */
@@ -1073,7 +1073,7 @@ transform: translate(0, 200%);
 
 /*--------------PROJET 2---------------*/
 
-.projet2{
+#projet2{
   background-image: url('../photo/affiche-203.svg');
   transition: filter 0.3s ease;
   /* Définissez le style de l'image de fond */
@@ -1105,7 +1105,7 @@ transform: translate(0, 200%);
 
 /*--------------PROJET 3---------------*/
 
-.projet3{
+#projet3{
   background-image: url('../photo/Plan\ de\ travail\ 1-100.jpg');
   transition: filter 0.3s ease;
 
@@ -1159,7 +1159,7 @@ transform: translate(0, -420%);
 }
 
 /*--------------PROJET 4---------------*/
-.projet4{
+#projet4{
 background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
 transition: filter 0.3s ease;
 
@@ -1191,7 +1191,7 @@ background-color: rgba(66, 63, 62, 0.5);
 }
 
 /*--------------PROJET 5---------------*/
-.projet5{
+#projet5{
 background-image: url('../photo/projet4.svg');
 transition: filter 0.3s ease;
 
@@ -1225,7 +1225,7 @@ background-color: rgba(66, 63, 62, 0.5);
 }
 
 /*--------------PROJET 6---------------*/
-.projet6{
+#projet6{
 background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
 transition: filter 0.3s ease;
 
@@ -1261,7 +1261,44 @@ background-color: rgba(66, 63, 62, 0.5);
 }
 
 
+/********Animation projets***********/
 
+
+
+/*
+==============================================
+ANIMATION TIME!!!!
+==============================================
+*/
+/*
+==============================================
+slideDown
+==============================================
+*/
+
+
+.slideDown {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+ 
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+}
 
 
 
