@@ -648,4 +648,9 @@ color: #f29036;
 .categories:hover{
   background-color: #eeeeee;
 }
+
+.infos{
+  font-size: 12px;
+  margin-right: 80px;
+}
 }
