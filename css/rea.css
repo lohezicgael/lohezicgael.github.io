@@ -142,7 +142,7 @@ nav {
 
 .parallax {
   /* The image used */
-  background-image: url("../photo/Victor\ 6000\ Lohézic\ Gaël.jpg");
+  background-image: url("../photo/Book_Graphique_Gael_Lohezic.png");
 
   /* Set a specific height */
   min-height: 500px; 
@@ -154,6 +154,30 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.book{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  background: #3f388ec5;
+  color: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  width: 100%;
+  height: 60px;
+}
+
+.book:hover{
+  opacity: 0.5;
 }
 
 /*--------------PROJET 1---------------*/
@@ -441,8 +465,110 @@ transform: translate(0, -110%);
   background-color: rgba(66, 63, 62, 0.5); 
   }
 
+  
+/*--------------PROJET 8---------------*/
+#projet8{
+  background-image: url('../photo/Mojito\ fond\ vert.png');
+  transition: filter 0.3s ease;
+  
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  
+  }
+  
+  #info8{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+  
+  }
+  
+  #info8:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+  }
 
+/*--------------PROJET 9---------------*/
+#projet9{
+  background-image: url('../photo/V5.png');
+  transition: filter 0.3s ease;
+  
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  
+  }
+  
+  #info9{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+  
+  }
+  
+  #info9:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+  }
 
+  /*--------------PROJET 10---------------*/
+#projet10{
+  background-image: url('../photo/Book_graphique/Book_Graphique_Gael_Lohezic6.png');
+  transition: filter 0.3s ease;
+  
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  
+  }
+  
+  #info10{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+  
+  }
+  
+  #info10:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+  }
+
+  
 @media only screen and (max-width: 767px) {
 
 
@@ -722,6 +848,7 @@ color: #f29036;
   grid-template-rows: 2fr 2fr 2fr;
   margin-right: 10px;
   margin-left: 10px;  
+  gap: 15px;
 }
 
 #titre{
@@ -1010,7 +1137,111 @@ background-color: rgba(66, 63, 62, 0.5);
 
 
 }
+
+  
+/*--------------PROJET 8---------------*/
+#projet8{
+  background-image: url('../photo/Mojito\ fond\ vert.png');
+  transition: filter 0.3s ease;
+  
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  
+  }
+  
+  #info8{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+  
+  }
+  
+  #info8:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+  }
+
+/*--------------PROJET 9---------------*/
+#projet9{
+  background-image: url('../photo/V5.png');
+  transition: filter 0.3s ease;
+  
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  
+  }
+  
+  #info9{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+  
+  }
+  
+  #info9:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+  }
+
+  /*--------------PROJET 10---------------*/
+#projet10{
+  background-image: url('../photo/Book_graphique/Book_Graphique_Gael_Lohezic6.png');
+  transition: filter 0.3s ease;
+  
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  
+  }
+  
+  #info10{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+  
+  }
+  
+  #info10:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+  }
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
