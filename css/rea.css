@@ -226,7 +226,7 @@ nav {
 
 .info:hover .titre_projet {
   transition: 0.6s;
-  transform: translate(0, -180%);
+  transform: translate(0, -150%);
 }
 
 .info p {
@@ -323,7 +323,7 @@ transition: 0.6s transform; /* Ajout de la transition sur la propriété transfo
 
 #info3:hover p {
 transition: 0.6s;
-transform: translate(0, -110%);
+transform: translate(0, -700%);
 }
 
 /*--------------PROJET 4---------------*/
@@ -568,6 +568,27 @@ transform: translate(0, -110%);
   background-color: rgba(66, 63, 62, 0.5); 
   }
 
+  #info10 .titre_projet{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Knewave', cursive;
+    margin-top: 250px;
+    transition: 0.6s transform;
+  }
+  
+  #info10:hover .titre_projet {
+  transition: 0.6s;
+  transform: translate(0, -130%);
+  }
+  
+  #info10 p {
+  transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
+  }
+  
+  #info10:hover p {
+  transition: 0.6s;
+  transform: translate(0, -400%);
+  }
   
 @media only screen and (max-width: 767px) {
 
@@ -1243,255 +1264,7 @@ background-color: rgba(66, 63, 62, 0.5);
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-/*--------------PROJET 1---------------*/
-
-#projet1{
-  background-image: url('../photo/projet2.svg');
-  transition: filter 0.3s ease;
-  /* Définissez le style de l'image de fond */
-  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
-  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
-  background-position: center center; 
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: flex; /* Utilisez display:flex; pour permettre l'alignement vertical */
-}
-
-
-
-#info1{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  text-align: center;
-  opacity: 0; /* Le texte est initialement invisible */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
-  height: 100%;
-}
-
-#info1:hover{
-  opacity: 1;
-  background-color: rgba(66, 63, 62, 0.5); 
-
-}
-
-.titre_projet{
-  font-size: 2em;
-  text-align: center;
-  font-family: 'Knewave', cursive;
-  margin-top: 150px;
-  transition: 0.6s transform;
-}
-
-.info:hover .titre_projet {
-transition: 0.6s;
-transform: translate(0, -130%);
-}
-
-.info p {
-transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
-}
-
-.info:hover p {
-transition: 0.6s;
-transform: translate(0, 200%);
-}
-
-
-/*--------------PROJET 2---------------*/
-
-#projet2{
-  background-image: url('../photo/affiche-203.svg');
-  transition: filter 0.3s ease;
-  /* Définissez le style de l'image de fond */
-  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
-  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
-  background-position: center center; 
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-#info2{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  text-align: center;
-  opacity: 0; /* Le texte est initialement invisible */
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-}
-
-#info2:hover{
-  opacity: 1;
-  background-color: rgba(66, 63, 62, 0.5); 
-
-}
-
-/*--------------PROJET 3---------------*/
-
-#projet3{
-  background-image: url('../photo/Plan\ de\ travail\ 1-100.jpg');
-  transition: filter 0.3s ease;
-
-  /* Définissez le style de l'image de fond */
-  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
-  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
-  background-position: center center; 
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  
-}
-
-#info3{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  text-align: center;
-  opacity: 0; /* Le texte est initialement invisible */
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-}
-
-#info3:hover{
-  opacity: 1;
-  background-color: rgba(66, 63, 62, 0.5); 
-}
-
-#info3 .titre_projet{
-font-size: 2em;
-text-align: center;
-font-family: 'Knewave', cursive;
-margin-top: 250px;
-transition: 0.6s transform;
-}
-
-#info3:hover .titre_projet {
-transition: 0.6s;
-transform: translate(0, -300%);
-}
-
-#info3 p {
-transition: 0.6s transform; /* Ajout de la transition sur la propriété transform */
-}
-
-#info3:hover p {
-transition: 0.6s;
-transform: translate(0, -420%);
-}
-
-/*--------------PROJET 4---------------*/
-#projet4{
-background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
-transition: filter 0.3s ease;
-
-/* Définissez le style de l'image de fond */
-background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
-background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
-background-position: center center; 
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 4;
-grid-row-end: 5;
-
-}
-
-#info4{
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 4;
-grid-row-end: 5;
-text-align: center;
-opacity: 0; /* Le texte est initialement invisible */
-transition: opacity 0.3s ease;
-cursor: pointer;
-}
-
-#info4:hover{
-opacity: 1;
-background-color: rgba(66, 63, 62, 0.5); 
-}
-
-/*--------------PROJET 5---------------*/
-#projet5{
-background-image: url('../photo/projet4.svg');
-transition: filter 0.3s ease;
-
-/* Définissez le style de l'image de fond */
-background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
-background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
-background-position: center center; 
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 5;
-grid-row-end: 6;
-
-}
-
-#info5{
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 5;
-grid-row-end: 6;
-text-align: center;
-opacity: 0; /* Le texte est initialement invisible */
-transition: opacity 0.3s ease;
-cursor: pointer;
-  
-
-}
-
-#info5:hover{
-opacity: 1;
-background-color: rgba(66, 63, 62, 0.5); 
-}
-
-/*--------------PROJET 6---------------*/
-#projet6{
-background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
-transition: filter 0.3s ease;
-
-/* Définissez le style de l'image de fond */
-background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
-background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
-background-position: center center; 
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 6;
-grid-row-end: 7;
-
-}
-
-#info6{
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 6;
-grid-row-end: 7;
-text-align: center;
-opacity: 0; /* Le texte est initialement invisible */
-transition: opacity 0.3s ease;
-cursor: pointer;
-  
-
-}
-
-#info6:hover{
-opacity: 1;
-background-color: rgba(66, 63, 62, 0.5); 
-}
-
-}
 
 
 /********Animation projets***********/
