@@ -433,7 +433,7 @@ transform: translate(0, -700%);
 
 /*--------------PROJET 7---------------*/
 #projet7{
-  background-image: url('../photo/Poster_lohezic_leguennec.png');
+  background-image: url('../photo/Poster_lohezic_leguennec.svg');
   transition: filter 0.3s ease;
   
   /* Définissez le style de l'image de fond */
@@ -468,7 +468,7 @@ transform: translate(0, -700%);
   
 /*--------------PROJET 8---------------*/
 #projet8{
-  background-image: url('../photo/Mojito\ fond\ vert.png');
+  background-image: url('../photo/mojito-fond-vert.avif');
   transition: filter 0.3s ease;
   
   /* Définissez le style de l'image de fond */

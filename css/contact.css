@@ -193,7 +193,7 @@ nav {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.61);
 }
 
-.contact{
+.contact1{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -204,7 +204,7 @@ nav {
     font-size: 2.5em;
 }
 
-
+/********RESEAUX SOCIAUX*********/
 .reseaux{
     display: flex;
     flex-direction: column;
@@ -227,7 +227,7 @@ nav {
 
 .infos{
   font-size: 1.2em;
-  margin-right: 80px;
+  margin-right: 60px;
 }
 
 #mail{
@@ -460,6 +460,37 @@ color: #f29036;
 .categories:hover{
   background-color: #eeeeee;
 }
+
+/********RESEAUX SOCIAUX*********/
+.reseaux{
+  display: flex;
+  flex-direction: column;
+}
+
+.rs{
+  width: 40px;
+  margin: 10px;
+}
+
+.reseaux1{
+  display: flex;
+  flex-direction: column;
+}
+
+.reseaux2{
+  display: flex;
+  flex-direction: column;
+}
+
+.infos{
+font-size: 16px;
+margin-right: 0px;
+
+}
+
+#mail{
+width: 45px;
+}
 }
 
 
@@ -653,9 +684,11 @@ color: #f29036;
 }
 
 .infos{
-  font-size: 12pxem;
-  margin-right: 80px;
+  font-size: 2px;
+  margin-right: 0px;
 }
+
+
 }
 
 /********Animation projets***********/

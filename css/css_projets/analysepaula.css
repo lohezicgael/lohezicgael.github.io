@@ -28,7 +28,7 @@ p {
 }
 
 :root {
-  --background-color: #FDF203;
+  --background-color: white;
   --text-color: white;
   --heading-color: white;
 }
@@ -156,7 +156,7 @@ footer {
   max-height: calc(105vh - 120px - 9rem);
   padding: 1rem 3rem 3rem;
   max-width: 250px;
-  background-color: #d5b904;
+  background-color: #ff9900;
   overflow: auto;
   margin-left: 50px;
 }
