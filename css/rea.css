@@ -328,7 +328,7 @@ transform: translate(0, -700%);
 
 /*--------------PROJET 4---------------*/
 #projet4{
-  background-image: url('../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
+  background-image: url('../photo/Victor6000.svg');
   transition: filter 0.3s ease;
 
   /* Définissez le style de l'image de fond */
@@ -394,7 +394,7 @@ transform: translate(0, -700%);
 
 /*--------------PROJET 6---------------*/
 #projet6{
-  background-image: url('../photo/Portrait\ graphique\ Lohézic\ Gaël.jpg');
+  background-image: url('../photo/Portrait_graphique.svg');
   transition: filter 0.3s ease;
 
   /* Définissez le style de l'image de fond */
