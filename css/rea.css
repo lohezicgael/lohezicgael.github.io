@@ -183,7 +183,7 @@ nav {
 /*--------------PROJET 1---------------*/
 
 #projet1{
-    background-image: url('../photo/projet2.svg');
+    background-image: url();
     transition: filter 0.3s ease;
     /* Définissez le style de l'image de fond */
     background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
