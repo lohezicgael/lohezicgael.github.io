@@ -433,7 +433,7 @@ transform: translate(0, -700%);
 
 /*--------------PROJET 7---------------*/
 #projet7{
-  background-image: url('../photo/Poster_lohezic_leguennec.svg');
+  background-image: url('../photo/Poster_lohezic_leguennec.png');
   transition: filter 0.3s ease;
   
   /* Définissez le style de l'image de fond */
