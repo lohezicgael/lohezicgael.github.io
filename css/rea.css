@@ -589,8 +589,9 @@ transform: translate(0, -700%);
   transition: 0.6s;
   transform: translate(0, -400%);
   }
+  
+@media only screen and (max-width: 767px) {
 
-@media only screen and (max-width: 768px) {
   .conteneur_texte_projet{
     display: flex;
     flex-direction: column;
@@ -660,6 +661,8 @@ transform: translate(0, -700%);
   display: none;
 }
 
+
+@media only screen and (max-width: 768px) {
   /* hide classic menu */
   #topnav_menu {
     display: none;
@@ -858,11 +861,11 @@ color: #f29036;
   grid-template-rows: 2fr 2fr 2fr;
   margin-right: 0px;
   margin-left: 0px;  
- 
+  margin-top: 67px;
 }
 
 #titre{
-  margin-left: 10px;
+  display: none;
 }
 
 /*--------------PROJET 1---------------*/
