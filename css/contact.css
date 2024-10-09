@@ -55,7 +55,7 @@ a{
 }
 
 :root {
-    --background-color: #000000;
+    --background-color: #F28F34;
     --text-color: white;
     --heading-color: white;
   }
@@ -252,6 +252,7 @@ p{
   align-items: center;
   width: 100%;
   height: 68px;
+  position: fixed;
 }
 .topnav_link {
   color: rgb(0, 0, 0);
@@ -493,6 +494,10 @@ margin-right: 60px;
  /* hide classic menu */
  #topnav_menu {
   display: none;
+}
+
+.topnav {
+  position: fixed;
 }
 
 #conteneur_contact{
