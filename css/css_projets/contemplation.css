@@ -316,7 +316,7 @@ frame {
   
   .conteneur_texte_projet{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   
