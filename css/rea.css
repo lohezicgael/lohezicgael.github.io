@@ -437,7 +437,7 @@ transform: translate(0, -700%);
 
 /*--------------PROJET 7---------------*/
 #projet7{
-  background-image: url('../photo/Poster_lohezic_leguennec.png');
+  background-image: url('../photo/Poster_lohezic_leguennec.jpg');
   transition: filter 0.3s ease;
   
   /* Définissez le style de l'image de fond */
@@ -506,7 +506,7 @@ transform: translate(0, -700%);
 
 /*--------------PROJET 9---------------*/
 #projet9{
-  background-image: url('../photo/V5.png');
+  background-image: url('../photo/Blue_lagoon.jpg');
   transition: filter 0.3s ease;
   
   /* Définissez le style de l'image de fond */
