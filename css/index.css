@@ -128,7 +128,7 @@ nav {
     font-size: 10px;
     text-align: center;
     width: 100%;
-    position: fixed;
+    position: relative;
   }
 
   /*Logo dans barre de navigation*/
