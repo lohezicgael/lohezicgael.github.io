@@ -667,6 +667,11 @@ transform: translate(0, -700%);
 
 
 @media only screen and (max-width: 768px) {
+  .hidden {
+    pointer-events: none; /* Empêche les clics */
+    visibility: hidden; /* Cache visuellement les éléments */
+}
+  
   /* hide classic menu */
   #topnav_menu {
     display: none;
@@ -700,7 +705,7 @@ transform: translate(0, -700%);
     top: 0;
     width: 100vw;
     height: 100vh;
-
+    
     z-index: 99;
 
     transform-origin: 0% 0%;
