@@ -642,6 +642,11 @@ transform: translate(0, -700%);
   display: none;
 }
 
+.info {
+  position: relative;
+  z-index: 9997; /* Place l'icône toujours au-dessus */
+}
+
 .topnav {
   background-color: #ffffff;
   display: flex;
@@ -649,6 +654,7 @@ transform: translate(0, -700%);
   width: 100%;
   height: 68px;
   position: fixed;
+  z-index: 9999;
 }
 .topnav_link {
   color: rgb(0, 0, 0);
