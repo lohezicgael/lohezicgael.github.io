@@ -274,16 +274,46 @@ footer {
 .video-container {
   position: relative;
   max-width: 100%; 
-  margin-left: 50px;
-  margin-right: 50px;
+
+  margin-bottom: 0;
 }
 .video-container iframe {
   width: 100%; 
   height: 600px; 
-  margin: 20px auto; 
   display: block; 
 }
 
+#texte-motion{
+  width: 30%;
+  padding: 50px;
+  padding-right: 0;
+  margin: 0;
+}
+
+.conteneur-texte-motion{
+  background-color: #103D65;
+display: flex;
+flex-direction: row;
+
+}
+
+#gif{
+  width: 70%;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#conteneur-affiche{
+display: flex; 
+justify-content: center; 
+height: 100vh;
+margin-top: 20px;
+}
+
+#affiche{
+  height: auto;
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -552,6 +582,16 @@ color: #f29036;
 
   .categories:hover{
     background-color: #eeeeee;
+  }
+
+  #gif{
+    display:none;
+  }
+
+  #texte-motion{
+    width: 100%;
+    padding: 50px;
+    margin: 0;
   }
 }
 }
