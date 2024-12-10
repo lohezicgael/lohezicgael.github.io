@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #1c70c1;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.97px;
+      }
+
+      .cls-4 {
+        stroke: #5ad5f8;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="1.32" y="1.27" width="47.47" height="47.47"/>
+    </clipPath>
+  </defs>
+  <g id="Designer">
+    <rect class="cls-1" x="1.32" y="1.27" width="47.47" height="47.47"/>
+    <g class="cls-5">
+      <line class="cls-2" x1="12.87" y1="26.26" x2="26.69" y2="48.34"/>
+      <line class="cls-2" x1="18.61" y1="18.99" x2="22.84" y2="25.73"/>
+      <line class="cls-2" x1="48.59" y1="26.23" x2="12.67" y2="26.13"/>
+      <line class="cls-2" x1="1.32" y1="24.98" x2="21.79" y2="1.27"/>
+      <line class="cls-2" x1="12.59" y1="25.93" x2="33.66" y2="1.54"/>
+    </g>
+    <rect class="cls-4" x="1.32" y="1.27" width="47.47" height="47.47"/>
+  </g>
+</svg>

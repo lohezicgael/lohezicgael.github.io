@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 1.94px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #f20017;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-width: 1.1px;
+      }
+    </style>
+  </defs>
+  <g id="DaVinci">
+    <circle class="cls-1" cx="25.06" cy="24.97" r="23.7"/>
+    <g>
+      <path class="cls-2" d="M25.18,8.81h0c3.65,0,6.6,2.96,6.6,6.6v6.6h-6.6c-3.65,0-6.6-2.96-6.6-6.6h0c0-3.65,2.96-6.6,6.6-6.6Z" transform="translate(18.27 -13.29) rotate(45)"/>
+      <path class="cls-2" d="M35.12,24.56h0c3.65,0,6.6,2.96,6.6,6.6v6.6h-6.6c-3.65,0-6.6-2.96-6.6-6.6h0c0-3.65,2.96-6.6,6.6-6.6Z" transform="translate(76.48 53.41) rotate(166.69)"/>
+      <path class="cls-2" d="M14.99,24.56h6.6v6.6c0,3.65-2.96,6.6-6.6,6.6h0c-3.65,0-6.6-2.96-6.6-6.6h0c0-3.65,2.96-6.6,6.6-6.6Z" transform="translate(7.58 -2.61) rotate(13.31)"/>
+    </g>
+  </g>
+</svg>

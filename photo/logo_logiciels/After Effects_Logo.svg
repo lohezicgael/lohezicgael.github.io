@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .77px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #9a9aff;
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: 1.93px;
+      }
+
+      .cls-3 {
+        font-family: Lato-Regular, Lato;
+        font-size: 33.46px;
+        stroke-width: 1.44px;
+      }
+    </style>
+  </defs>
+  <g id="After_Effects" data-name="After Effects">
+    <rect class="cls-4" x="1.69" y="1.62" width="46.7" height="46.7"/>
+    <rect class="cls-2" x="1.69" y="1.62" width="46.7" height="46.7"/>
+    <text class="cls-3" transform="translate(5.28 37.2)"><tspan x="0" y="0">Ae</tspan></text>
+    <rect class="cls-1" x="4.5" y="44.3" width="16.57" height="1.91" rx=".48" ry=".48"/>
+    <rect class="cls-1" x="22.54" y="44.3" width="2.31" height="1.91" rx=".48" ry=".48"/>
+  </g>
+</svg>

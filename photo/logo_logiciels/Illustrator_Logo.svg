@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Lato-Regular, Lato;
+        font-size: 33.46px;
+        stroke-width: 1.44px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #f69400;
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: .77px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        stroke-width: 1.93px;
+      }
+    </style>
+  </defs>
+  <g id="Illustrator">
+    <rect class="cls-4" x="1.83" y="1.63" width="46.7" height="46.7"/>
+    <rect class="cls-3" x="1.83" y="1.63" width="46.7" height="46.7"/>
+    <text class="cls-1" transform="translate(8.38 37.22)"><tspan x="0" y="0">Ai</tspan></text>
+    <rect class="cls-2" x="4.64" y="44.31" width="16.57" height="1.91" rx=".48" ry=".48"/>
+    <rect class="cls-2" x="22.69" y="44.31" width="2.31" height="1.91" rx=".48" ry=".48"/>
+  </g>
+</svg>
