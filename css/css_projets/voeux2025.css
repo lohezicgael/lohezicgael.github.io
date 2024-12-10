@@ -308,11 +308,14 @@ flex-direction: row;
 display: flex; 
 justify-content: center; 
 height: 100vh;
-margin-top: 20px;
+background-color:#89AEDD;
 }
 
 #affiche{
-  height: auto;
+  max-width: 100%; /* L'image ne dépasse jamais la largeur du conteneur */
+  max-height: 100%; /* L'image ne dépasse jamais la hauteur du conteneur */
+  object-fit: contain; /* Adapte l'image en conservant ses proportions */
+  
 }
 
 @media only screen and (max-width: 767px) {
