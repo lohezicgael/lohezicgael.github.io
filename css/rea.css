@@ -83,6 +83,29 @@ nav {
   margin: 0 auto;
   }
 
+/*CV*/
+.container_cv {
+  background-color: white;
+  width: 170px;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.oeil {
+  width: 60px;
+}
+
+.cv {
+  text-decoration: none;
+  color: black;
+  font-family: 'Knewave', cursive;
+  padding-top: 13px;
+}
+
   footer {
     bottom: 0;
     background-color: #423f3e;
