@@ -231,13 +231,19 @@ h3 {
 /*Image qui contient ma photo*/
 .photo {
   width: 700px;
-  height: 700px;
+  height: 510px;
   max-width: 100%;
 }
 
 .photo-text {
   display: flex;
   width: 100%;
+}
+
+.surligneur{
+  text-decoration: underline #ffffff;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px; /* Épaisseur du surlignement */
 }
 
 @media only screen and (max-width: 600px) {
