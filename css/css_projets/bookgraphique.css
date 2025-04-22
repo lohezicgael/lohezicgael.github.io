@@ -19,9 +19,10 @@ h1 {
   font-family: 'Knewave', cursive;
 }
 
-p {
+p, li {
   font-family: 'Kodchasan', sans-serif;
 }
+
 
 .auteur{
   font-style: italic;

@@ -95,7 +95,16 @@ nav {
   flex-direction: row;
 }
 
+.main_container_cv{
+  display: flex;
+  flex-direction: row;
+}
+
 .oeil {
+  width: 60px;
+}
+
+.oeil_2 {
   width: 60px;
 }
 
