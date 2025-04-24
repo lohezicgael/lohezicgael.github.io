@@ -661,6 +661,40 @@ transform: translate(0, -700%);
     background-color: rgba(66, 63, 62, 0.5); 
     }
   
+  /*--------------PROJET 12---------------*/
+  #projet12{
+    background-image: url('../photo/Voeux2025/Voeux2025-banniere.png');
+    transition: filter 0.3s ease;
+    
+    /* Définissez le style de l'image de fond */
+    background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+    background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+    background-position: center center; 
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 5px solid rgb(255, 255, 255);
+    }
+    
+    #info12{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    opacity: 0; /* Le texte est initialement invisible */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+      
+    
+    }
+    
+    #info12:hover{
+    opacity: 1;
+    background-color: rgba(66, 63, 62, 0.5); 
+    }
+
 @media only screen and (max-width: 767px) {
 
   .conteneur_texte_projet{
@@ -1335,6 +1369,74 @@ background-color: rgba(66, 63, 62, 0.5);
   opacity: 1;
   background-color: rgba(66, 63, 62, 0.5); 
   }
+
+    /*--------------PROJET 11---------------*/
+#projet11{
+  background-image: url('../photo/Book_graphique/Book_Graphique_Gael_Lohezic6.png');
+  transition: filter 0.3s ease;
+  
+  /* Définissez le style de l'image de fond */
+  background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+  background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+  background-position: center center; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 11;
+  grid-row-end: 12;
+  
+  }
+  
+  #info11{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 11;
+  grid-row-end: 12;
+  text-align: center;
+  opacity: 0; /* Le texte est initialement invisible */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+    
+  
+  }
+  
+  #info11:hover{
+  opacity: 1;
+  background-color: rgba(66, 63, 62, 0.5); 
+  }
+
+  /*--------------PROJET 12---------------*/
+  #projet12{
+    background-image: url('../photo/Voeux2025/Voeux2025-banniere.png');
+    transition: filter 0.3s ease;
+    
+    /* Définissez le style de l'image de fond */
+    background-repeat: no-repeat; /* Répétition de l'image de fond (valeurs possibles : repeat, repeat-x, repeat-y, no-repeat) */
+    background-size: cover; /* Taille de l'image de fond (valeurs possibles : auto, cover, contain) */
+    background-position: center center; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    border: 5px solid rgb(255, 255, 255);
+    }
+    
+    #info12{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    text-align: center;
+    opacity: 0; /* Le texte est initialement invisible */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+      
+    
+    }
+    
+    #info12:hover{
+    opacity: 1;
+    background-color: rgba(66, 63, 62, 0.5); 
+    }
 }
 
 
