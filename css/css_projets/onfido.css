@@ -162,11 +162,11 @@ footer {
 }
 
 :root {
-  --bg1: url('../../photo/Moodboard.jpg');
-  --bg2: url('../../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
-  --bg3: url('../../photo/Victor\ 6000\ Lohézic\ Gaël.jpg');
-  --bg4: url("../photo/projet2.svg");
-  --bg5: url("../photo/projet2.svg");
+  --bg1: url('../../photo/onfido/onfido-1.jpg');
+  --bg2: url('../../photo/onfido/onfido-7.jpg');
+  --bg3: url('../../photo/onfido/onfido-8.jpg');
+  --bg4: url("../../photo/onfido/onfido-9.jpg");
+  --bg5: url("../../photo/onfido/onfido-11.jpg");
 }
 
 .box-container {
@@ -182,34 +182,20 @@ footer {
   margin-right: 40px;
 }
 
+input[type="radio"] {
+  display: none;
+}
+
 .box {
-  width: 25%;
+  width: 5%;
   height: 100%;
   cursor: pointer;
   transition: width 0.5s ease-in-out;
   position: relative;
   overflow: hidden;
-}
-
-
-.box:nth-child(1) {
-  background: var(--bg1) center/cover no-repeat;
-}
-
-.box:nth-child(2) {
-  background: var(--bg2) center/cover no-repeat;
-}
-
-.box:nth-child(3) {
-  background: var(--bg3) center/cover no-repeat;
-}
-
-.box:nth-child(4) {
-  background: var(--bg4) center/cover no-repeat;
-}
-
-.box:nth-child(5) {
-  background: var(--bg5) center/cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box .overlay {
@@ -222,20 +208,31 @@ footer {
   width: 100%;
   transition: 0.5s ease;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-  opacity: 0;
-}
-
-.box.closed {
-  width: 5%;
-}
-
-.box.closed .overlay {
   opacity: 1;
 }
 
-.box.expanded {
+#img1:checked ~ .b1,
+#img2:checked ~ .b2,
+#img3:checked ~ .b3,
+#img4:checked ~ .b4,
+#img5:checked ~ .b5 {
   width: 85%;
+  background-size: contain;
 }
+
+#img1:checked ~ .b1 .overlay,
+#img2:checked ~ .b2 .overlay,
+#img3:checked ~ .b3 .overlay,
+#img4:checked ~ .b4 .overlay,
+#img5:checked ~ .b5 .overlay {
+  opacity: 0;
+}
+
+.b1 { background-image: var(--bg1); }
+.b2 { background-image: var(--bg2); }
+.b3 { background-image: var(--bg3); }
+.b4 { background-image: var(--bg4); }
+.b5 { background-image: var(--bg5); }
 
 /***CTA****/
 .container_btn {
