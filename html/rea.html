@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Découvre mes projets fait avec passion autour du graphisme et de ce que j'aime" />
   <script>
     // Fonction JavaScript pour changer de page en fonction de l'élément cliqué
     function changerPage(numeroProjet) {
@@ -89,7 +90,7 @@
           <a class="topnav_link" href="/contact-us">CONTACT</a>
         </nav>
     
-        <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+        <a id="topnav_hamburger_icon" href="#" onclick="event.preventDefault(); showResponsiveMenu();">
           <!-- Some spans to act as a hamburger -->
           <span></span>
           <span></span>
@@ -114,12 +115,11 @@
     <img class="oeil" src="../photo/Oeil.svg" alt="oeil">
     <a href="../photo/Lohezic_Gael_CV_final.pdf" target="_blank" class="cv">Voir mon CV</a>
   </div>
-
-  <div class="container_cv">
-    <img class="oeil_2" src="../photo/Oeil_2.svg" alt="oeil">
-    <a href="https://www.behance.net/gallery/185216187/Book-Graphique-Gael-Lohzic" target="_blank" class="cv">Mon book</a>
-  </div>
 </div>
+<div class="parallax" onclick="window.open('https://www.behance.net/gallery/185216187/Book-Graphique-Gael-Lohzic', '_blank')">
+  <a  href="https://www.behance.net/gallery/185216187/Book-Graphique-Gael-Lohzic" target="_blank"><button class="book">Découvrez mon book graphique</button></a>
+  
+  </div>
     <div class="conteneur_projet">
       <div class="flex-item slideDown" id="projet1" onclick="changerPage(1)"></div>
 
@@ -214,14 +214,6 @@
 </div>
 
 </div>
-
-    <div class="parallax" onclick="window.open('https://www.behance.net/gallery/185216187/Book-Graphique-Gael-Lohzic', '_blank')">
-    <a  href="https://www.behance.net/gallery/185216187/Book-Graphique-Gael-Lohzic" target="_blank"><button class="book">Découvrez mon book graphique</button></a>
-    
-    </div>
-    
-    
-
 
 
     <footer>

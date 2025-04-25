@@ -167,6 +167,7 @@ nav {
     grid-template-rows: 2fr 2fr 2fr 2fr;
     margin-right: 50px;
     margin-left: 50px; 
+    margin-bottom: 10vh;
     border: 5px solid rgb(255, 255, 255);
 }
 
@@ -180,7 +181,7 @@ nav {
   /* Set a specific height */
   min-height: 500px; 
 
-  margin-top: 15vh;
+  margin-bottom: 10vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -977,6 +978,7 @@ color: #f29036;
   grid-template-rows: 2fr 2fr 2fr;
   margin-right: 0px;
   margin-left: 0px;  
+  margin-bottom: 10vh;
   margin-top: 67px;
 }
 
