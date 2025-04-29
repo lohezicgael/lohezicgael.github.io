@@ -178,24 +178,109 @@ h2 {
 }
 
 footer {
-  bottom: 0;
-  background-color: #423f3e;
-  font-family: "Kodchasan", sans-serif;
-  font-size: 10px;
-  text-align: center;
-  width: 100%;
-  min-height: 50px;
-  display: flex;
-  flex-direction:row ;
-  justify-content: center; 
-  color: white;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  background: #ffffff;
+  padding: 40px 20px 10px;
+  color: #333;
+ 
 }
 
-.footer {margin: 10px;
-  margin-top: auto;
-  margin-bottom: auto;}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+
+.footer-col {
+  flex: 1 1 160px;
+  margin: 10px 20px;
+
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Kodchasan', sans-serif;
+  text-align: center;
+}
+
+.footer-col p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  font-family: 'Kodchasan', sans-serif;
+  color: #423F3E;
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-name {
+  font-size: 1.1rem;
+  margin-top: -8px;
+}
+
+.circular-button {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: filter 1s ease, transform 1s ease;
+}
+
+.circular-button svg {
+  background: none;
+}
+
+
+hr {
+  margin: 30px auto 10px;
+  border: none;
+  border-top: 1px solid #423F3E;
+  width: 90%;
+}
+
+.footer-bottom p {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 15px;
+  color: #423F3E;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.logo_footer {
+  width: 100px;
+  margin-top: 0px;
+}
+
+#footer-title-1{
+color: #D93A3A;
+}
+
+#footer-title-2{
+color: #41388E;
+}
+
+#footer-title-3{
+color: #F28F34;
+}
+
+
+
+.circular-button.invert text {
+  fill:#423F3E; /* le texte devient noir */
+}
+
+.circular-button.invert line {
+  stroke:#423F3E; /* la flèche devient noire */
+}
 
 h3 {
   font-family: 'Kodchasan', sans-serif;
@@ -247,6 +332,43 @@ h3 {
   text-decoration-thickness: 2px; /* Épaisseur du surlignement */
 }
 
+.blocs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  box-sizing: border-box; /* Important pour que padding soit bien pris en compte */
+  margin-top: 30px;
+  align-items: stretch;
+}
+
+.bloc {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  min-width: 250px;
+  box-sizing: border-box; 
+}
+
+.text_bloc{
+  font-size: 1.4vw;
+  font-family: 'Kodchasan', sans-serif;
+  color: #423F3E;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.titre_bloc{
+  color: #41388E;
+}
+
 @media only screen and (max-width: 600px) {
   .photo-text {
     flex-wrap: wrap;
@@ -255,7 +377,7 @@ h3 {
   .bio_text {
     font-size: 1.3em;
     text-align: start;
-
+margin-bottom: 0;
   }
 
   footer {
@@ -274,12 +396,17 @@ h3 {
   }
 
   .box {
-    width: 120px;
-    height: 600px;
+    width: 100%;
+    height: 700px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+
+  .container {
+    margin: 0px;
+  
   }
 
   .text-aff {
@@ -694,5 +821,34 @@ color: #f29036;
 
 .categories:hover{
   background-color: #eeeeee;
+}
+
+.blocs {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.bloc {
+  width: 100%;
+  max-width: 500px;
+}
+
+.text_bloc{
+  font-size: 1em;
+}
+
+.titre_bloc{
+  font-size: 1.5em;
+}
+
+.container_cv {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url("../photo/sol_bio_2_mobile.svg");
+  background-size: cover;
 }
 }
