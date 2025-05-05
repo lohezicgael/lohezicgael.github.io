@@ -88,23 +88,112 @@ color: #DC0B2B ;
   margin: 0 auto;
 }
 
+
 footer {
-  bottom: 0;
-  background-color: #423f3e;
-  font-family: "Kodchasan", sans-serif;
-  font-size: 10px;
-  text-align: center;
-  width: 100%;
-  min-height: 50px;
-  position: fixed;
-  display: flex;
-  flex-direction:row ;
-  justify-content: space-between; 
+  background: #ffffff;
+  padding: 40px 20px 10px;
+  color: #333;
+ 
 }
 
-.footer {margin: 10px;
-  margin-top: auto;
-  margin-bottom: auto;}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+
+.footer-col {
+  flex: 1 1 160px;
+  margin: 10px 20px;
+
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Kodchasan', sans-serif;
+  text-align: center;
+}
+
+.footer-col p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  font-family: 'Kodchasan', sans-serif;
+  color: #423F3E;
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-name {
+  font-size: 1.1rem;
+  margin-top: -8px;
+}
+
+.circular-button {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: filter 1s ease, transform 1s ease;
+}
+
+.circular-button svg {
+  background: none;
+}
+
+
+hr {
+  margin: 30px auto 10px;
+  border: none;
+  border-top: 1px solid #423F3E;
+  width: 90%;
+}
+
+.footer-bottom p {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 15px;
+  color: #423F3E;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.logo_footer {
+  width: 100px;
+  margin-top: 0px;
+}
+
+#footer-title-1{
+color: #D93A3A;
+}
+
+#footer-title-2{
+color: #41388E;
+}
+
+#footer-title-3{
+color: #F28F34;
+}
+
+
+
+.circular-button.invert text {
+  fill:#423F3E; /* le texte devient noir */
+}
+
+.circular-button.invert line {
+  stroke:#423F3E; /* la flèche devient noire */
+}
+
 
 /*Logo dans barre de navigation*/
 .container-logo {
@@ -319,8 +408,17 @@ background-color:#89AEDD;
 }
 
 @media only screen and (max-width: 767px) {
+  #conteneur-affiche{
+    display: flex; 
+    justify-content: center; 
+    height: 50vh;
+    background-color:#89AEDD;
+    }
 
-
+  footer {
+    text-align: center;
+    margin-left: 0;
+  }
   
   .conteneur_texte_projet{
     display: flex;
